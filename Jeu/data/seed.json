@@ -1,0 +1,133 @@
+{
+  "version": 2,
+  "categories": [
+    { "id": "animaux", "label": "Animaux" },
+    { "id": "alimentation", "label": "Alimentation" },
+    { "id": "lieux", "label": "Lieux" },
+    { "id": "objets", "label": "Objets" },
+    { "id": "metiers", "label": "Métiers" },
+    { "id": "nature", "label": "Nature" },
+    { "id": "sports", "label": "Sports" },
+    { "id": "transports", "label": "Transports" },
+    { "id": "maison", "label": "Maison" },
+    { "id": "culture", "label": "Culture et loisirs" },
+    { "id": "vetements", "label": "Vêtements" },
+    { "id": "sciences", "label": "Sciences" }
+  ],
+  "wordSets": [
+    {
+      "categoryId": "animaux",
+      "clue": "C'est un être vivant que l'on peut rencontrer dans la nature ou auprès des humains.",
+      "cluePrecision": "vague",
+      "values": ["Chien", "Chat", "Cheval", "Lion", "Tigre", "Éléphant", "Girafe", "Zèbre", "Ours", "Loup", "Renard", "Panda", "Koala", "Kangourou", "Dauphin", "Baleine", "Requin", "Tortue", "Crocodile", "Grenouille", "Papillon", "Abeille", "Hibou", "Aigle", "Pingouin"]
+    },
+    {
+      "categoryId": "alimentation",
+      "clue": "C'est quelque chose que l'on peut manger ou boire.",
+      "cluePrecision": "vague",
+      "values": ["Pomme", "Banane", "Orange", "Fraise", "Raisin", "Citron", "Tomate", "Carotte", "Pomme de terre", "Pain", "Fromage", "Beurre", "Yaourt", "Chocolat", "Gâteau", "Crêpe", "Pizza", "Pâtes", "Riz", "Soupe", "Salade", "Hamburger", "Sushi", "Croissant", "Miel"]
+    },
+    {
+      "categoryId": "lieux",
+      "clue": "C'est un endroit où l'on peut se rendre.",
+      "cluePrecision": "vague",
+      "values": ["École", "Bibliothèque", "Musée", "Cinéma", "Théâtre", "Hôpital", "Pharmacie", "Boulangerie", "Marché", "Gare", "Aéroport", "Port", "Plage", "Piscine", "Forêt", "Montagne", "Désert", "Île", "Village", "Ville", "Château", "Ferme", "Stade", "Parc", "Restaurant"]
+    },
+    {
+      "categoryId": "objets",
+      "clue": "C'est une chose fabriquée que l'on peut utiliser au quotidien.",
+      "cluePrecision": "vague",
+      "values": ["Téléphone", "Ordinateur", "Tablette", "Clavier", "Souris", "Écran", "Appareil photo", "Montre", "Réveil", "Lampe", "Chaise", "Table", "Canapé", "Miroir", "Parapluie", "Valise", "Sac à dos", "Clé", "Cadenas", "Bouteille", "Tasse", "Assiette", "Fourchette", "Couteau", "Lunettes"]
+    },
+    {
+      "categoryId": "metiers",
+      "clue": "C'est une activité professionnelle exercée par une personne.",
+      "cluePrecision": "vague",
+      "values": ["Médecin", "Infirmier", "Professeur", "Cuisinier", "Boulanger", "Pompier", "Policier", "Pilote", "Jardinier", "Facteur", "Vétérinaire", "Dentiste", "Coiffeur", "Mécanicien", "Architecte", "Avocat", "Journaliste", "Photographe", "Musicien", "Acteur", "Peintre", "Plombier", "Électricien", "Agriculteur", "Marin"]
+    },
+    {
+      "categoryId": "nature",
+      "clue": "C'est un élément ou un phénomène du monde naturel.",
+      "cluePrecision": "vague",
+      "values": ["Soleil", "Lune", "Étoile", "Nuage", "Pluie", "Neige", "Orage", "Vent", "Arc-en-ciel", "Rivière", "Lac", "Océan", "Cascade", "Vallée", "Volcan", "Glacier", "Rocher", "Sable", "Herbe", "Fleur", "Arbre", "Chêne", "Palmier", "Champignon", "Corail"]
+    },
+    {
+      "categoryId": "sports",
+      "clue": "C'est une activité physique que l'on pratique seul ou en équipe.",
+      "cluePrecision": "moyenne",
+      "values": ["Football", "Basket-ball", "Tennis", "Rugby", "Natation", "Cyclisme", "Course à pied", "Gymnastique", "Judo", "Karaté", "Boxe", "Escrime", "Ski", "Snowboard", "Surf", "Escalade", "Volley-ball", "Handball", "Badminton", "Golf", "Équitation", "Aviron", "Patinage", "Hockey", "Danse"]
+    },
+    {
+      "categoryId": "transports",
+      "clue": "C'est un moyen de se déplacer d'un endroit à un autre.",
+      "cluePrecision": "moyenne",
+      "values": ["Voiture", "Vélo", "Moto", "Bus", "Tramway", "Métro", "Train", "TGV", "Avion", "Hélicoptère", "Bateau", "Voilier", "Sous-marin", "Camion", "Taxi", "Ambulance", "Tracteur", "Trottinette", "Scooter", "Montgolfière", "Fusée", "Téléphérique", "Ferry", "Caravane", "Skateboard"]
+    },
+    {
+      "categoryId": "maison",
+      "clue": "C'est un élément ou un espace que l'on peut trouver dans un logement.",
+      "cluePrecision": "moyenne",
+      "values": ["Cuisine", "Salon", "Chambre", "Salle de bain", "Couloir", "Balcon", "Jardin", "Garage", "Grenier", "Cave", "Fenêtre", "Porte", "Escalier", "Réfrigérateur", "Congélateur", "Four", "Micro-ondes", "Lave-linge", "Aspirateur", "Oreiller", "Couverture", "Matelas", "Rideau", "Tapis", "Armoire"]
+    },
+    {
+      "categoryId": "culture",
+      "clue": "C'est une œuvre, une activité ou une forme de divertissement.",
+      "cluePrecision": "vague",
+      "values": ["Livre", "Roman", "Bande dessinée", "Poésie", "Peinture", "Sculpture", "Photographie", "Chanson", "Opéra", "Concert", "Festival", "Cinéma d'animation", "Jeu vidéo", "Puzzle", "Échecs", "Jeu de cartes", "Marionnette", "Cirque", "Ballet", "Comédie", "Documentaire", "Légende", "Conte", "Affiche", "Instrument de musique"]
+    },
+    {
+      "categoryId": "vetements",
+      "clue": "C'est quelque chose que l'on peut porter.",
+      "cluePrecision": "moyenne",
+      "values": ["T-shirt", "Chemise", "Pantalon", "Jean", "Robe", "Jupe", "Manteau", "Veste", "Pull", "Écharpe", "Bonnet", "Casquette", "Chapeau", "Gants", "Chaussettes", "Chaussures", "Bottes", "Baskets", "Sandales", "Pyjama", "Maillot de bain", "Ceinture", "Cravate", "Sac à main", "Bracelet"]
+    },
+    {
+      "categoryId": "sciences",
+      "clue": "C'est un élément, un outil ou un phénomène étudié par les sciences.",
+      "cluePrecision": "vague",
+      "values": ["Atome", "Cellule", "Microscope", "Télescope", "Planète", "Galaxie", "Comète", "Satellite", "Robot", "Aimant", "Boussole", "Thermomètre", "Batterie", "Électricité", "Énergie solaire", "Laboratoire", "ADN", "Fossile", "Dinosaure", "Gravité", "Son", "Lumière", "Laser", "Réaction chimique", "Éclipse"]
+    }
+  ],
+  "pairSets": [
+    {
+      "categoryId": "animaux",
+      "pairs": [["Chat", "Souris"], ["Lion", "Savane"], ["Éléphant", "Safari"], ["Abeille", "Fleur"], ["Grenouille", "Mare"], ["Cheval", "Selle"], ["Pingouin", "Iceberg"], ["Araignée", "Toile"], ["Dauphin", "Bateau"], ["Chameau", "Désert"]]
+    },
+    {
+      "categoryId": "alimentation",
+      "pairs": [["Pomme", "Verger"], ["Orange", "Jus"], ["Fraise", "Confiture"], ["Pain", "Boulangerie"], ["Gâteau", "Bougie"], ["Crêpe", "Sucre"], ["Café", "Croissant"], ["Pizza", "Four"], ["Riz", "Baguettes"], ["Fromage", "Souris"]]
+    },
+    {
+      "categoryId": "lieux",
+      "pairs": [["Plage", "Parasol"], ["Lac", "Canne à pêche"], ["Rivière", "Pont"], ["Forêt", "Cabane"], ["Montagne", "Ski"], ["Musée", "Billet"], ["Gare", "Valise"], ["Hôtel", "Clé"], ["Village", "Marché"], ["Parc", "Balançoire"]]
+    },
+    {
+      "categoryId": "objets",
+      "pairs": [["Stylo", "Carnet"], ["Tasse", "Thé"], ["Canapé", "Télécommande"], ["Montre", "Calendrier"], ["Sac à dos", "Randonnée"], ["Lampe", "Livre"], ["Téléphone", "Chargeur"], ["Clé", "Porte"], ["Couteau", "Pomme"], ["Miroir", "Rouge à lèvres"]]
+    },
+    {
+      "categoryId": "metiers",
+      "pairs": [["Médecin", "Stéthoscope"], ["Professeur", "Tableau noir"], ["Boulanger", "Farine"], ["Pompier", "Incendie"], ["Pilote", "Cockpit"], ["Journaliste", "Microphone"], ["Acteur", "Scène"], ["Architecte", "Plan"], ["Policier", "Insigne"], ["Jardinier", "Arrosoir"]]
+    },
+    {
+      "categoryId": "nature",
+      "pairs": [["Rivière", "Pont"], ["Mer", "Coquillage"], ["Volcan", "Lave"], ["Pluie", "Flaque"], ["Vent", "Cerf-volant"], ["Chêne", "Gland"], ["Fleur", "Papillon"], ["Glacier", "Ours polaire"], ["Rocher", "Montagne"], ["Soleil", "Crème solaire"]]
+    },
+    {
+      "categoryId": "sports",
+      "pairs": [["Football", "Sifflet"], ["Tennis", "Raquette"], ["Ski", "Montagne"], ["Marathon", "Médaille"], ["Judo", "Ceinture"], ["Basket-ball", "Panier"], ["Natation", "Lunettes"], ["Escalade", "Corde"], ["Boxe", "Gants"], ["Hockey", "Palet"]]
+    },
+    {
+      "categoryId": "transports",
+      "pairs": [["Voiture", "Garage"], ["Vélo", "Casque"], ["Bus", "Abribus"], ["Train", "Rail"], ["Avion", "Piste"], ["Bateau", "Phare"], ["Scooter", "Essence"], ["Camion", "Entrepôt"], ["Ferry", "Île"], ["Fusée", "Compte à rebours"]]
+    },
+    {
+      "categoryId": "maison",
+      "pairs": [["Cuisine", "Recette"], ["Salon", "Télévision"], ["Lit", "Réveil"], ["Four", "Biscuit"], ["Réfrigérateur", "Aimant"], ["Douche", "Serviette"], ["Balcon", "Plante"], ["Grenier", "Malle"], ["Aspirateur", "Poussière"], ["Rideau", "Soleil"]]
+    },
+    {
+      "categoryId": "vetements",
+      "pairs": [["Chemise", "Cravate"], ["Pantalon", "Ceinture"], ["Robe", "Soirée"], ["Manteau", "Neige"], ["Bonnet", "Hiver"], ["Chaussures", "Lacets"], ["Chaussettes", "Chaussures"], ["Écharpe", "Vent"], ["Nœud papillon", "Mariage"], ["Maillot de bain", "Plage"]]
+    }
+  ]
+}
