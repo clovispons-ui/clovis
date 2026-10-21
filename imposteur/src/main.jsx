@@ -4,7 +4,6 @@ import {
   GAME_MODES,
   MAX_PLAYERS,
   MIN_PLAYERS,
-  TIMER_OPTIONS,
   defaultImpostorCount,
   maxPlayableImpostors,
   validateConfiguration,
@@ -18,7 +17,6 @@ import {
 } from "./game.js";
 import { closeDatabase, importSeed, openDatabase } from "./database.js";
 import { createRepository } from "./repository.js";
-import { CountdownTimer } from "../../common/src/timer.js";
 import seedUrl from "../data/seed.json?url";
 
 const INITIAL_STATE = {
@@ -27,22 +25,17 @@ const INITIAL_STATE = {
   starting: false,
   categories: [],
   draft: {
-    names: ["Alex", "Sam", "Noa", "Lou"],
+    names: ["Joueur 1", "Joueur 2", "Joueur 3", "Joueur 4"],
     mode: GAME_MODES.CLUE,
     impostorCount: 1,
     includeMisterWhite: false,
     categoryIds: [],
-    timerEnabled: false,
-    timerDuration: 30,
   },
   round: null,
   roundNumber: 0,
   dealIndex: 0,
   revealed: false,
   startingPlayerId: null,
-  roundTimerEnabled: false,
-  roundTimerDuration: 30,
-  timerSeconds: null,
   eliminatedPlayerId: null,
   winner: null,
   endReason: "",
@@ -179,24 +172,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (game.screen !== "discussion" || !game.roundTimerEnabled) return undefined;
-
-    const timer = new CountdownTimer();
-    timer.start(
-      game.roundTimerDuration,
-      (seconds) => setGame((current) => (
-        current.screen === "discussion" ? { ...current, timerSeconds: seconds } : current
-      )),
-      () => setGame((current) => (
-        current.screen === "discussion"
-          ? { ...current, screen: "eliminationChoice", timerSeconds: null, notice: "" }
-          : current
-      )),
-    );
-    return () => timer.stop();
-  }, [game.screen, game.roundTimerEnabled, game.roundTimerDuration]);
-
-  useEffect(() => {
     function hideSecret() {
       if (document.hidden) {
         setGame((current) => (
@@ -282,7 +257,6 @@ function App() {
       winner,
       endReason: reason,
       screen: "end",
-      timerSeconds: null,
       notice: "",
     }));
   }
@@ -297,9 +271,6 @@ function App() {
       ...current,
       startingPlayerId: startingPlayer.id,
       notice,
-      roundTimerEnabled: current.lastConfig.timerEnabled,
-      roundTimerDuration: current.lastConfig.timerDuration,
-      timerSeconds: current.lastConfig.timerEnabled ? current.lastConfig.timerDuration : null,
       screen: "discussion",
     }));
   }
@@ -319,7 +290,6 @@ function App() {
     setGame((current) => ({
       ...current,
       screen: "eliminationChoice",
-      timerSeconds: null,
       notice: "",
     }));
   }
@@ -533,7 +503,7 @@ function App() {
             ))}
           </div>
 
-          <div className="settings-grid">
+          <div className="settings-stack">
             <NumberStepper
               label={draft.mode === GAME_MODES.MISTER_WHITE ? "Nombre de Mister White" : "Nombre d’imposteurs"}
               value={Math.min(maxImpostors, Math.max(minImpostors, draft.impostorCount))}
@@ -545,7 +515,7 @@ function App() {
                 : "Au moins un civil restera dans la partie."}
             />
             {draft.mode === GAME_MODES.CLOSE_WORD && (
-              <label className="toggle-card">
+              <label className="toggle-card mister-white-option">
                 <input
                   type="checkbox"
                   checked={draft.includeMisterWhite && canAddMisterWhite}
@@ -562,60 +532,40 @@ function App() {
             )}
           </div>
 
-          <SectionHeading number="03" title="Ambiance de la manche" description="Mélangez plusieurs thèmes si vous le souhaitez." />
-          <div className="category-grid">
-            {game.categories.map((category) => (
-              <label className="category-chip" key={category.id}>
-                <input
-                  type="checkbox"
-                  value={category.id}
-                  checked={draft.categoryIds.includes(category.id)}
-                  onChange={(event) => setGame((current) => ({
-                    ...current,
-                    draft: {
-                      ...current.draft,
-                      categoryIds: event.target.checked
-                        ? [...current.draft.categoryIds, category.id]
-                        : current.draft.categoryIds.filter((id) => id !== category.id),
-                    },
-                  }))}
-                />
-                <span className="checkmark" aria-hidden="true">✓</span>
-                <span>{category.label}</span>
-              </label>
-            ))}
-          </div>
-
-          <SectionHeading number="04" title="Chrono de discussion" description="Le compte à rebours couvre toute la discussion." />
-          <div className="timer-settings">
-            <label className="toggle-card toggle-card--compact">
-              <input
-                type="checkbox"
-                checked={draft.timerEnabled}
-                onChange={(event) => setGame((current) => ({
-                  ...current,
-                  draft: { ...current.draft, timerEnabled: event.target.checked },
-                }))}
-              />
-              <span className="toggle-visual" aria-hidden="true" />
-              <span><strong>Activer le chrono</strong><small>Temps accordé au groupe pour discuter.</small></span>
-            </label>
-            <label className={`field-block timer-duration ${draft.timerEnabled ? "" : "is-disabled"}`}>
-              <span className="field-label">Durée de discussion</span>
-              <select
-                className="select-control"
-                value={draft.timerDuration}
-                disabled={!draft.timerEnabled}
-                onChange={(event) => setGame((current) => ({
-                  ...current,
-                  draft: { ...current.draft, timerDuration: Number(event.target.value) },
-                }))}
-              >
-                {TIMER_OPTIONS.map((duration) => (
-                  <option value={duration} key={duration}>{duration} secondes</option>
-                ))}
-              </select>
-            </label>
+          <div className="categories-section">
+            <SectionHeading number="03" title="Ambiance de la manche" description="Choisissez les thèmes qui peuvent inspirer les mots." />
+            <p className="category-selection-count" aria-live="polite">
+              {draft.categoryIds.length === 0
+                ? "Aucune catégorie sélectionnée"
+                : draft.categoryIds.length === 1
+                  ? "1 catégorie sélectionnée"
+                  : `${draft.categoryIds.length} catégories sélectionnées`}
+              {" "}sur {game.categories.length}
+            </p>
+            <div className="category-list">
+              {game.categories.map((category) => {
+                const selected = draft.categoryIds.includes(category.id);
+                return (
+                  <label className={`category-option ${selected ? "is-selected" : ""}`} key={category.id}>
+                    <input
+                      type="checkbox"
+                      value={category.id}
+                      checked={selected}
+                      onChange={(event) => setGame((current) => ({
+                        ...current,
+                        draft: {
+                          ...current.draft,
+                          categoryIds: event.target.checked
+                            ? [...current.draft.categoryIds, category.id]
+                            : current.draft.categoryIds.filter((id) => id !== category.id),
+                        },
+                      }))}
+                    />
+                    <span>{category.label}</span>
+                  </label>
+                );
+              })}
+            </div>
           </div>
 
           <button className="button button--primary button--full start-button" type="submit" disabled={game.starting}>
@@ -707,15 +657,7 @@ function App() {
               <div className="speaker-avatar" aria-hidden="true">{(startingPlayer?.name ?? "?").slice(0, 1).toLocaleUpperCase("fr")}</div>
               <h1>{startingPlayer?.name ?? "Groupe"}</h1>
               <p className="reveal-instruction">Commencez par cette personne, puis discutez librement.</p>
-              {game.roundTimerEnabled ? (
-                <div className="timer-display" aria-live="off">
-                  <span className="timer-ring" aria-hidden="true">◷</span>
-                  <span>{game.timerSeconds ?? game.roundTimerDuration}</span>
-                  <small>SECONDES</small>
-                </div>
-              ) : (
-                <div className="turn-hint"><span className="turn-hint-dot" />Discutez librement, puis choisissez une personne.</div>
-              )}
+              <div className="turn-hint"><span className="turn-hint-dot" />Discutez librement, puis choisissez une personne.</div>
               <button className="button button--primary button--full" type="button" onClick={beginEliminationChoice}>
                 <span>Choisir qui éliminer</span><span className="button-arrow" aria-hidden="true">→</span>
               </button>

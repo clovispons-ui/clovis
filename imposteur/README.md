@@ -42,7 +42,7 @@ La banque initiale contient **300 mots simples** avec un indice et son niveau de
 - **Indice** : l'imposteur reçoit une piste (et son niveau de précision) à la place du mot.
 - **Mot proche** : les civils et imposteurs reçoivent deux termes associés. Mister White peut occuper une place du quota d'imposteurs ; cette option n'est disponible qu'à partir de cinq joueurs et d'au moins deux imposteurs.
 - Un joueur civil est désigné au hasard pour commencer la discussion ; il n'y a pas de tour de parole affiché. Le groupe touche ensuite directement le nom du joueur à éliminer.
-- Le chrono, s'il est activé, couvre la discussion entière et mène ensuite au choix de la personne à éliminer.
+- La discussion est libre, sans compte à rebours. Le groupe passe au choix de la personne à éliminer quand il est prêt.
 - Les imposteurs gagnent dès qu'ils sont aussi nombreux que les civils encore actifs. Pour éviter qu'une partie ne soit déjà gagnée au premier écran, leur nombre est limité à moins de la moitié des joueurs (arrondi vers le bas).
 - En mode Mister White, une mauvaise réponse de dernière chance donne la victoire aux civils. En mode mot proche, Mister White est éliminé après une mauvaise réponse et la partie continue si les conditions de victoire ne sont pas atteintes.
 
@@ -81,6 +81,6 @@ Les éléments partagés avec les autres mini-jeux viennent de `common/` à la r
 - `src/game.js` contient les fonctions de jeu indépendantes de l'interface, notamment le choix d'une personne civile pour commencer et l'élimination directe.
 - `src/database.js` crée les magasins IndexedDB et importe le seed.
 - `src/repository.js` filtre et tire les mots/paires en consultant l'historique.
-- `src/main.jsx` contient l'interface React et relie les écrans aux règles et au minuteur.
+- `src/main.jsx` contient l'interface React et relie les écrans aux règles.
 - `styles.css` applique le thème clair/sombre et les dispositions adaptées au téléphone.
 - `scripts/validate-seed.mjs` contrôle les quantités et références du fichier seed.

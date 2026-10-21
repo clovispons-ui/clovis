@@ -693,19 +693,13 @@ p {
   border: 4px solid var(--accent);
 }
 
-.settings-grid,
-.timer-settings {
+.settings-stack {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  margin-top: 14px;
   gap: 10px;
 }
 
-.settings-grid {
-  margin-top: 14px;
-  align-items: stretch;
-}
-
-.settings-grid .stepper-field {
+.settings-stack .stepper-field {
   margin: 0;
 }
 
@@ -724,8 +718,7 @@ p {
   transition: background 150ms ease, border-color 150ms ease;
 }
 
-.toggle-card input,
-.category-chip input {
+.toggle-card input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -735,8 +728,7 @@ p {
   white-space: nowrap;
 }
 
-.toggle-card input:focus-visible + .toggle-visual,
-.category-chip input:focus-visible + .checkmark {
+.toggle-card input:focus-visible + .toggle-visual {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
 }
@@ -799,71 +791,60 @@ p {
   background: var(--accent-ink);
 }
 
-.category-grid {
-  display: flex;
-  margin-top: 15px;
-  flex-wrap: wrap;
-  gap: 8px;
+.mister-white-option {
+  min-height: 64px;
 }
 
-.category-chip {
-  position: relative;
-  display: inline-flex;
-  min-height: 36px;
-  align-items: center;
+.categories-section {
+  margin-top: 30px;
+}
+
+.category-selection-count {
+  margin: 15px 0 9px;
+  color: var(--subtle);
+  font-size: 11px;
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 7px;
-  padding: 0 11px;
+}
+
+.category-option {
+  display: flex;
+  min-width: 0;
+  min-height: 43px;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 11px;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 11px;
   background: var(--surface-strong);
   color: var(--muted);
   cursor: pointer;
-  font-size: 10px;
-  transition: background 150ms ease, border-color 150ms ease, color 150ms ease;
+  font-size: 11px;
+  line-height: 1.35;
+  transition: background 130ms ease, border-color 130ms ease, color 130ms ease;
 }
 
-.category-chip:has(input:checked) {
+.category-option:hover {
+  border-color: color-mix(in srgb, var(--accent) 42%, var(--line));
+}
+
+.category-option.is-selected {
   border-color: color-mix(in srgb, var(--accent) 48%, var(--line));
   background: color-mix(in srgb, var(--accent) 9%, var(--surface));
   color: var(--accent);
 }
 
-.checkmark {
-  display: grid;
-  width: 14px;
-  height: 14px;
-  place-items: center;
-  border: 1px solid var(--subtle);
-  border-radius: 4px;
-  color: transparent;
-  font-size: 9px;
-}
-
-.category-chip:has(input:checked) .checkmark {
-  border-color: var(--accent);
-  background: var(--accent);
-  color: var(--accent-ink);
-}
-
-.timer-settings {
-  margin-top: 15px;
-  align-items: center;
-}
-
-.toggle-card--compact {
-  min-height: 59px;
-}
-
-.timer-duration .select-control {
-  min-height: 43px;
-}
-
-.timer-duration.is-disabled {
-  opacity: 0.46;
-}
-
-.timer-duration.is-disabled .select-control {
-  cursor: not-allowed;
+.category-option input {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  margin: 0;
+  accent-color: var(--accent);
+  cursor: pointer;
 }
 
 .start-button {
@@ -1075,33 +1056,6 @@ p {
 
 .discussion-main .button {
   margin-top: auto;
-}
-
-.timer-display {
-  display: flex;
-  min-height: 53px;
-  margin: 0 0 20px;
-  align-items: center;
-  gap: 9px;
-  color: var(--accent);
-}
-
-.timer-display > span:nth-child(2) {
-  font-size: 31px;
-  font-weight: 800;
-  letter-spacing: -0.06em;
-  font-variant-numeric: tabular-nums;
-}
-
-.timer-ring {
-  font-size: 22px;
-}
-
-.timer-display small {
-  color: var(--subtle);
-  font-size: 8px;
-  font-weight: 800;
-  letter-spacing: 0.12em;
 }
 
 .turn-hint {
@@ -1512,8 +1466,7 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .settings-grid,
-  .timer-settings {
+  .category-list {
     grid-template-columns: 1fr;
   }
 

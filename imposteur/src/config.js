@@ -11,8 +11,6 @@ export const GAME_MODES = Object.freeze({
   CLOSE_WORD: "close-word",
 });
 
-export const TIMER_OPTIONS = Object.freeze([30, 45, 60, 90, 120]);
-
 export function defaultImpostorCount(playerCount) {
   if (playerCount <= 5) return 1;
   if (playerCount <= 9) return 2;
@@ -52,11 +50,6 @@ export function validateConfiguration(input) {
     errors.push("Avec Mister White en mode mot proche, il faut au moins deux imposteurs.");
   }
 
-  const timerDuration = Number(input.timerDuration);
-  if (input.timerEnabled && !TIMER_OPTIONS.includes(timerDuration)) {
-    errors.push("Choisissez une durée de discussion proposée.");
-  }
-
   return {
     ok: errors.length === 0,
     errors,
@@ -66,8 +59,6 @@ export function validateConfiguration(input) {
       impostorCount,
       includeMisterWhite: input.mode === GAME_MODES.CLOSE_WORD && Boolean(input.includeMisterWhite),
       categoryIds: [...new Set(input.categoryIds ?? [])],
-      timerEnabled: Boolean(input.timerEnabled),
-      timerDuration,
     },
   };
 }

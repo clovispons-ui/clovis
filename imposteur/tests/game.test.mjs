@@ -23,8 +23,6 @@ function configuration(mode, overrides = {}) {
     impostorCount: 1,
     includeMisterWhite: false,
     categoryIds: ["animaux"],
-    timerEnabled: false,
-    timerDuration: 30,
     ...overrides,
   });
   assert.equal(validated.ok, true, validated.errors.join(", "));
@@ -55,6 +53,21 @@ test("la configuration applique les limites et rejette les pseudos dupliqués", 
   });
   assert.equal(unbalanced.ok, false);
   assert.match(unbalanced.errors.join(" "), /inférieur au nombre de civils/);
+});
+
+test("la configuration n'inclut plus d'option de chrono", () => {
+  const result = validateConfiguration({
+    names: ["Alice", "Benoît", "Chloé"],
+    mode: GAME_MODES.CLUE,
+    impostorCount: 1,
+    categoryIds: ["animaux"],
+    timerEnabled: true,
+    timerDuration: -1,
+  });
+
+  assert.equal(result.ok, true);
+  assert.equal("timerEnabled" in result.config, false);
+  assert.equal("timerDuration" in result.config, false);
 });
 
 test("Mister White ne reçoit aucun mot et les civils reçoivent le mot commun", () => {
