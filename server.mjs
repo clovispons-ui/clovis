@@ -1,5 +1,5 @@
 import { createReadStream } from "node:fs";
-import { access } from "node:fs/promises";
+import { access, stat } from "node:fs/promises";
 import { createServer } from "node:http";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -46,15 +46,18 @@ const server = createServer(async (request, response) => {
     return;
   }
 
+  let targetPath = filePath;
   try {
-    await access(filePath);
+    const info = await stat(targetPath);
+    if (info.isDirectory()) targetPath = path.join(targetPath, "index.html");
+    await access(targetPath);
   } catch {
     sendText(response, 404, "Fichier introuvable");
     return;
   }
 
   response.writeHead(200, {
-    "Content-Type": MIME_TYPES.get(path.extname(filePath)) ?? "application/octet-stream",
+    "Content-Type": MIME_TYPES.get(path.extname(targetPath)) ?? "application/octet-stream",
     "X-Content-Type-Options": "nosniff",
     "Cache-Control": "no-cache",
   });
@@ -62,9 +65,9 @@ const server = createServer(async (request, response) => {
     response.end();
     return;
   }
-  createReadStream(filePath).pipe(response);
+  createReadStream(targetPath).pipe(response);
 });
 
 server.listen(PORT, HOST, () => {
-  console.log(`Jeu de l'imposteur disponible sur http://${HOST}:${PORT}`);
+  console.log(`Mini-jeux clovis disponibles sur http://${HOST}:${PORT}`);
 });

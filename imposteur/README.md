@@ -4,13 +4,13 @@ Jeu de bluff en français, à jouer à plusieurs sur un seul appareil. Le projet
 
 ## Lancer l'application
 
-Prérequis : Node.js 18 ou plus récent.
+Prérequis : Node.js 18 ou plus récent. Les commandes se lancent depuis la racine du dépôt.
 
 ```sh
 npm start
 ```
 
-Ouvrir ensuite <http://localhost:4173>. Pour choisir un autre port :
+Ouvrir ensuite <http://localhost:4173> et choisir « À couvert » sur la page d'accueil, ou ouvrir directement <http://localhost:4173/imposteur/>. Pour choisir un autre port :
 
 ```sh
 PORT=8080 npm start
@@ -20,9 +20,11 @@ Par défaut, le serveur n'écoute que sur `127.0.0.1`. Pour accéder à l'applic
 
 ## Tester et vérifier les données
 
+Depuis la racine du dépôt :
+
 ```sh
 npm test
-npm run seed:check
+npm run seed:check:imposteur
 ```
 
 La banque initiale contient **300 mots simples** avec un indice et son niveau de précision, ainsi que **100 paires de mots associés mais plus distincts** (par exemple « chat / souris » ou « train / rail »), réparties dans 10 catégories.
@@ -50,10 +52,9 @@ Au premier chargement, `data/seed.json` est importé dans IndexedDB. Les catégo
 ## Structure
 
 ```text
-.
+imposteur/
 ├── index.html
 ├── styles.css
-├── server.mjs
 ├── data/seed.json
 ├── scripts/validate-seed.mjs
 ├── src/
@@ -62,17 +63,17 @@ Au premier chargement, `data/seed.json` est importé dans IndexedDB. Les catégo
 │   ├── game.js
 │   ├── main.js
 │   ├── repository.js
-│   ├── timer.js
 │   └── ui.js
 └── tests/
     ├── game.test.mjs
     └── seed.test.mjs
 ```
 
+Les éléments partagés avec les autres mini-jeux viennent de `common/` à la racine du dépôt : styles de base et de formulaires (`common/styles/`), chronomètre (`common/src/timer.js`), promesses IndexedDB (`common/src/indexeddb.js`) et normalisation des pseudos (`common/src/players.js`).
+
 - `src/game.js` contient les fonctions de jeu indépendantes de l'interface, notamment le choix d'une personne civile pour commencer et l'élimination directe.
 - `src/database.js` crée les magasins IndexedDB et importe le seed.
 - `src/repository.js` filtre et tire les mots/paires en consultant l'historique.
 - `src/ui.js` dessine les écrans et n'affiche les secrets que lors de leur révélation autorisée.
 - `src/main.js` relie les écrans, les éliminations directes, les règles et le minuteur.
-- `src/timer.js` pilote le compte à rebours de discussion optionnel.
 - `scripts/validate-seed.mjs` contrôle les quantités et références du fichier seed.

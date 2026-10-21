@@ -1,21 +1,8 @@
+import { requestResult, transactionResult } from "../../common/src/indexeddb.js";
+
 const DATABASE_NAME = "imposteur-local";
 const DATABASE_VERSION = 1;
 const STORE_NAMES = ["categories", "words", "wordPairs", "playedContent", "meta"];
-
-function requestResult(request) {
-  return new Promise((resolve, reject) => {
-    request.onsuccess = () => resolve(request.result);
-    request.onerror = () => reject(request.error ?? new Error("Échec d'une requête IndexedDB."));
-  });
-}
-
-function transactionResult(transaction) {
-  return new Promise((resolve, reject) => {
-    transaction.oncomplete = () => resolve();
-    transaction.onabort = () => reject(transaction.error ?? new Error("La transaction IndexedDB a été annulée."));
-    transaction.onerror = () => reject(transaction.error ?? new Error("Échec de la transaction IndexedDB."));
-  });
-}
 
 export async function openDatabase() {
   if (!globalThis.indexedDB) throw new Error("IndexedDB n'est pas disponible dans ce navigateur.");

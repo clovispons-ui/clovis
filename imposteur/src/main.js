@@ -7,7 +7,7 @@ import {
 import { createRound, chooseStartingPlayer, eliminatePlayer as eliminateActivePlayer, getVictory, answersMatch } from "./game.js";
 import { importSeed, openDatabase } from "./database.js";
 import { createRepository } from "./repository.js";
-import { CountdownTimer } from "./timer.js";
+import { CountdownTimer } from "../../common/src/timer.js";
 import { renderApp, updateTimerDisplay } from "./ui.js";
 
 const root = document.querySelector("#app");

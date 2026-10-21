@@ -1,11 +1,11 @@
 {
-  "name": "jeu-de-l-imposteur",
+  "name": "clovis",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "start": "node server.mjs",
     "test": "node --test",
-    "seed:check": "node scripts/validate-seed.mjs"
+    "seed:check:imposteur": "node imposteur/scripts/validate-seed.mjs"
   }
 }

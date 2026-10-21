@@ -1,3 +1,7 @@
+import { normalizePlayerName } from "../../common/src/players.js";
+
+export { normalizePlayerName };
+
 export const MIN_PLAYERS = 3;
 export const MAX_PLAYERS = 12;
 
@@ -17,15 +21,6 @@ export function defaultImpostorCount(playerCount) {
 
 export function maxPlayableImpostors(playerCount) {
   return Math.floor((playerCount - 1) / 2);
-}
-
-export function normalizePlayerName(name) {
-  return name
-    .trim()
-    .replace(/\s+/g, " ")
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
-    .toLocaleLowerCase("fr-FR");
 }
 
 export function validateConfiguration(input) {
