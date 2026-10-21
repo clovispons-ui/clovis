@@ -16,6 +16,7 @@ export default defineConfig({
       input: {
         home: resolve(rootDirectory, "index.html"),
         imposteur: resolve(rootDirectory, "imposteur/index.html"),
+        tuPreferes: resolve(rootDirectory, "tu_preferes/index.html"),
       },
     },
   },

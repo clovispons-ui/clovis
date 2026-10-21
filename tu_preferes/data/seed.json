@@ -1,0 +1,253 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "soft",
+      "label": "Soft",
+      "description": "Des dilemmes classiques, pour briser la glace sans gêner personne.",
+      "adult": false
+    },
+    {
+      "id": "hot",
+      "label": "Hot",
+      "description": "Des dilemmes provocateurs sur la vie intime, les drogues et la délinquance. Réservé aux adultes.",
+      "adult": true
+    }
+  ],
+  "dilemmaSets": [
+    {
+      "categoryId": "soft",
+      "theme": "Absurde",
+      "dilemmas": [
+        ["Avoir toujours froid", "Avoir toujours chaud"],
+        ["Parler toutes les langues", "Jouer de tous les instruments"],
+        ["Ne jamais pouvoir mentir", "Ne jamais pouvoir garder un secret"],
+        ["Vivre sans musique", "Vivre sans livres"],
+        ["Avoir des mains géantes", "Avoir des pieds minuscules"],
+        ["Pouvoir voler mais très lentement", "Courir très vite mais rester essoufflé"],
+        ["Être invisible une heure par jour", "Se téléporter une fois par semaine"],
+        ["Vivre sur la Lune", "Vivre au fond des océans"],
+        ["Rire à chaque funéraille", "Pleurer à chaque mariage"],
+        ["Avoir un animal qui parle mais te critique", "Avoir un animal adorable mais muet"],
+        ["Changer de prénom chaque année", "Changer de coiffure chaque jour"],
+        ["Sentir l'ail en permanence", "Avoir une voix criarde en permanence"],
+        ["Voir tout le monde en pyjama", "Être vu en pyjama par tout le monde"]
+      ]
+    },
+    {
+      "categoryId": "soft",
+      "theme": "Quotidien",
+      "dilemmas": [
+        ["Se lever à 5 h tous les jours", "Se coucher à 2 h tous les soirs"],
+        ["Faire la vaisselle toute ta vie", "Faire le ménage toute ta vie"],
+        ["Perdre ton téléphone", "Perdre tes clés"],
+        ["Ne plus jamais faire la queue", "Ne plus jamais rester bloqué dans les bouchons"],
+        ["Vivre un mois sans internet", "Vivre un mois sans café"],
+        ["Avoir toujours les chaussettes humides", "Avoir toujours les mains collantes"],
+        ["Une maison toujours impeccable", "Un jardin toujours parfait"],
+        ["Toujours être en avance d'une heure", "Toujours être en retard de dix minutes"],
+        ["Ne plus jamais utiliser de réveil", "Ne plus jamais faire de sieste"],
+        ["Faire les courses toute ta vie", "Faire la cuisine toute ta vie"],
+        ["Vivre sans lave-linge", "Vivre sans lave-vaisselle"],
+        ["Ranger toute la maison le samedi", "Profiter du samedi dans le désordre"],
+        ["Écrire toutes tes listes à la main", "Tout mémoriser sans jamais rien noter"]
+      ]
+    },
+    {
+      "categoryId": "soft",
+      "theme": "Voyage",
+      "dilemmas": [
+        ["Voyager uniquement en France", "Voyager partout sauf en France"],
+        ["Plage toute ta vie", "Montagne toute ta vie"],
+        ["Visiter le Japon", "Visiter l'Amérique du Sud"],
+        ["Dormir dans un hôtel de luxe", "Camper sous les étoiles"],
+        ["Toujours voyager en avion", "Toujours voyager en train"],
+        ["Un tour du monde une seule fois", "Un week-end surprise chaque mois"],
+        ["Vivre un an à l'étranger", "Explorer un pays différent chaque été"],
+        ["Ne visiter que des grandes villes", "Ne visiter que des villages"],
+        ["Un road trip sans fin", "Une croisière de luxe"],
+        ["Rater tous tes vols", "Perdre ta valise à chaque voyage"],
+        ["Voyager seul pendant un an", "Voyager en groupe pendant un an"],
+        ["Un voyage organisé dans le détail", "Une aventure improvisée sans plan"]
+      ]
+    },
+    {
+      "categoryId": "soft",
+      "theme": "Nourriture",
+      "dilemmas": [
+        ["Pizza toute ta vie", "Pâtes toute ta vie"],
+        ["Plus jamais de fromage", "Plus jamais de chocolat"],
+        ["Manger épicé à chaque repas", "Manger sucré à chaque repas"],
+        ["Ne plus jamais manger de pain", "Ne plus jamais manger de frites"],
+        ["Un seul dessert pour la vie", "Une seule boisson pour la vie"],
+        ["Tout ce que tu manges est trop salé", "Tout ce que tu manges est trop sucré"],
+        ["Petit-déjeuner toujours salé", "Petit-déjeuner toujours sucré"],
+        ["Manger des insectes une fois par semaine", "Ne plus jamais manger de viande"],
+        ["Restaurant tous les soirs mais toujours le même", "Cuisiner tous les soirs mais toujours varié"],
+        ["Fruits à volonté", "Légumes à volonté"],
+        ["Ne plus jamais goûter de nouveau plat", "Ne manger que des plats inconnus"],
+        ["Fromage à chaque repas", "Dessert à chaque repas"],
+        ["Une cuisine de chef une fois par an", "Un fast-food à volonté toute l'année"]
+      ]
+    },
+    {
+      "categoryId": "soft",
+      "theme": "Super-pouvoirs",
+      "dilemmas": [
+        ["Pouvoir voler", "Être invisible"],
+        ["Lire dans les pensées", "Contrôler la météo"],
+        ["Se téléporter", "Arrêter le temps"],
+        ["Une force surhumaine", "Une vitesse surhumaine"],
+        ["Parler aux animaux", "Parler aux plantes"],
+        ["Guérir les autres", "Te régénérer instantanément"],
+        ["Voir le passé", "Voir l'avenir"],
+        ["Devenir immortel", "Devenir riche instantanément"],
+        ["Un vœu exaucé tout de suite", "Trois vœux dans dix ans"],
+        ["Une super-ouïe", "Une super-vue"],
+        ["Changer d'apparence à volonté", "Changer de voix à volonté"],
+        ["Respirer sous l'eau", "Marcher sur les nuages"]
+      ]
+    },
+    {
+      "categoryId": "soft",
+      "theme": "Vie sociale",
+      "dilemmas": [
+        ["Dire tout ce que tu penses", "Ne jamais donner ton avis"],
+        ["Toujours partir en premier d'une soirée", "Toujours rentrer en dernier"],
+        ["Une soirée tranquille entre amis", "Une grande fête endiablée"],
+        ["Recevoir un cadeau incroyable", "Offrir un cadeau incroyable"],
+        ["Un meilleur ami pour la vie", "Beaucoup d'amis de passage"],
+        ["Vivre seul loin de tout", "Vivre en colocation bruyante"],
+        ["Faire rire toute la salle", "Rendre tout le monde fier de toi"],
+        ["Être connu de tout le monde", "Être riche et anonyme"],
+        ["Garder un secret pour toujours", "Tout avouer dès le départ"],
+        ["Sortir le vendredi soir", "Rester à la maison le vendredi soir"],
+        ["Discuter avec des inconnus", "Écouter les histoires de tes grands-parents"],
+        ["Être le patron que tout le monde craint", "Être le collègue que tout le monde adore"],
+        ["Pardonner une trahison", "Couper les ponts pour de bon"]
+      ]
+    },
+    {
+      "categoryId": "soft",
+      "theme": "Technologie",
+      "dilemmas": [
+        ["Vivre sans téléphone", "Vivre sans ordinateur"],
+        ["Tous les abonnements de streaming", "Une console de dernière génération"],
+        ["Réseaux sociaux sans photos", "Réseaux sociaux sans likes"],
+        ["Un GPS qui se trompe toujours", "Aucun GPS du tout"],
+        ["Un robot ménager à ton service", "Un assistant vocal qui lit dans tes pensées"],
+        ["Une panne d'internet pendant un an", "Perdre tous tes contacts"],
+        ["Un nouveau téléphone chaque année", "Un seul téléphone pour dix ans"],
+        ["Envoyer un message à ton toi du passé", "Recevoir un message de ton toi du futur"],
+        ["Écouter toute ta musique en vinyle", "Écouter toute ta musique en streaming"],
+        ["Travailler avec une intelligence artificielle", "Travailler sans aucune technologie"],
+        ["Jouer aux jeux vidéo toute ta vie", "Lire toute ta vie"],
+        ["Une montre qui mesure tout", "Un téléphone sans applications"]
+      ]
+    },
+    {
+      "categoryId": "soft",
+      "theme": "Nature et animaux",
+      "dilemmas": [
+        ["Un chien", "Un chat"],
+        ["Vivre en pleine forêt", "Vivre au bord de la mer"],
+        ["Nager avec des dauphins", "Marcher parmi des lions"],
+        ["Rencontrer un ours", "Rencontrer un requin"],
+        ["Un safari photo", "Une plongée sous-marine"],
+        ["Faire pousser un potager", "Adopter un animal de refuge"],
+        ["Été toute l'année", "Automne toute l'année"],
+        ["Ne plus jamais voir d'oiseaux", "Ne plus jamais voir de papillons"],
+        ["Un poney en cadeau", "Un perroquet en cadeau"],
+        ["Une randonnée de dix jours", "Un mois de camping"],
+        ["Ne plus jamais être piqué par un moustique", "Ne plus jamais être embêté par une mouche"],
+        ["Un arbre qui pousse en une heure", "Une fleur qui ne fane jamais"]
+      ]
+    },
+    {
+      "categoryId": "hot",
+      "theme": "Vie intime",
+      "dilemmas": [
+        ["Que tes parents lisent tous tes messages privés", "Que ton entourage découvre ton historique de recherche"],
+        ["Tout avouer à ta famille", "Tout avouer à ton ex"],
+        ["Une nuit torride dont personne ne parle", "Un amour platonique dont tout le monde se moque"],
+        ["Refuser un million d'euros pour une nuit", "Accepter et ne jamais pouvoir le raconter"],
+        ["Draguer quelqu'un devant ta mère", "Être dragué devant ton patron"],
+        ["Expliquer tes goûts intimes à voix haute", "Les voir défiler sur un écran géant"],
+        ["Rater la personne idéale par timidité", "Sortir avec la mauvaise personne par peur de la solitude"],
+        ["Que ton ex raconte tout à ton nouveau partenaire", "Que ton nouveau partenaire connaisse déjà tout de ton ex"],
+        ["Envoyer un message très osé à la mauvaise personne", "Ne jamais rien oser et le regretter"],
+        ["Une relation à distance", "Une relation libre"],
+        ["Raconter ta pire rupture à un inconnu", "Écouter les pires ruptures de tous tes amis"],
+        ["Que tes proches commentent chacun de tes rendez-vous", "Que tes proches comparent chacune de tes relations"]
+      ]
+    },
+    {
+      "categoryId": "hot",
+      "theme": "Situations osées",
+      "dilemmas": [
+        ["Traverser un centre commercial en pyjama", "Chanter faux devant mille personnes"],
+        ["Griller la file devant tout le monde", "Prendre la place de quelqu'un sous ses yeux"],
+        ["Envoyer un texto gênant à ton patron", "Envoyer un texto gênant à tes parents"],
+        ["Pleurer en public sans raison", "Rire au pire moment possible"],
+        ["Te baigner nu dans une fontaine en plein jour", "Passer une nuit en cellule de dégrisement"],
+        ["Avouer tes sentiments à la mauvaise personne", "Garder tes sentiments pour toujours"],
+        ["Faire un discours improvisé à un mariage", "Danser seul au milieu de la piste"],
+        ["Mentir pour couvrir un proche", "Dire la vérité et le fâcher à vie"]
+      ]
+    },
+    {
+      "categoryId": "hot",
+      "theme": "Soirées",
+      "dilemmas": [
+        ["Boire un verre de trop à la fête de l'année", "Rester sobre à la soirée la plus folle"],
+        ["Vomir devant la personne qui te plaît", "Être filmé en pleine danse ratée"],
+        ["Réveiller tes voisins à 3 h du matin", "Appeler ton ex à 3 h du matin"],
+        ["Partir sans payer ta part", "Payer l'addition tout seul"],
+        ["Une soirée où tu ne connais personne", "Une soirée où tout le monde connaît tes secrets"],
+        ["Faire un karaoké avec tes collègues", "Faire un jeu à boire avec ta famille"],
+        ["Tenir toute la nuit et oublier la moitié", "Rentrer tôt et rater la surprise de l'année"],
+        ["Que ta pire photo de soirée traîne en ligne", "Que ta pire phrase de soirée devienne une blague permanente"]
+      ]
+    },
+    {
+      "categoryId": "hot",
+      "theme": "Drogues",
+      "dilemmas": [
+        ["Avouer à ta famille que tu as déjà fumé", "Avouer à ton médecin que tu lui as menti"],
+        ["Découvrir que ton meilleur ami se défonce chaque week-end", "Découvrir qu'un proche revend des substances près de toi"],
+        ["Être le seul sobre de la soirée", "Céder à la pression du groupe une seule fois"],
+        ["Écrire un message sous influence et le regretter", "Recevoir un message gênant d'un ami défoncé"],
+        ["Voir un proche partir en vrille sans rien dire", "Intervenir et briser sa confiance"],
+        ["Tenir une soirée où circulent des choses pas claires", "Quitter la fête sans prévenir"],
+        ["Passer pour un balance auprès de tes amis", "Passer pour un complice aux yeux de la police"],
+        ["Goûter une substance inconnue une fois", "Vivre avec une curiosité jamais satisfaite"]
+      ]
+    },
+    {
+      "categoryId": "hot",
+      "theme": "Illégal",
+      "dilemmas": [
+        ["Voler dix euros à un inconnu", "Escroquer quelqu'un pour mille euros"],
+        ["Conduire sans permis pour sauver une vie", "Attendre les secours en priant"],
+        ["Garder un portefeuille trouvé par terre", "Le rendre et toucher une récompense"],
+        ["Assister à un délit sans rien dire", "Alerter la police et être vu de tous"],
+        ["Frauder les transports toute ta vie", "Payer chaque trajet avec ton dernier billet"],
+        ["Télécharger chaque film illégalement", "Payer tous les abonnements pour ne rien regarder"],
+        ["Faire du stop sur le bord de l'autoroute", "Traverser une frontière sans papiers"],
+        ["Aider ton frère à cacher une bêtise", "Dire la vérité et le perdre de vue"]
+      ]
+    },
+    {
+      "categoryId": "hot",
+      "theme": "Aveux",
+      "dilemmas": [
+        ["Avouer ton plus gros mensonge à voix haute", "Écouter les plus gros mensonges des autres"],
+        ["Dire à ton meilleur ami ce que tu penses vraiment", "Ne rien dire et te sentir minable"],
+        ["Découvrir un mensonge de tes parents", "Avouer un mensonge à tes parents"],
+        ["Confesser une bêtise à la police", "Confesser la même bêtise à ta grand-mère"],
+        ["Avouer que tu as triché à un examen", "Avouer que tu as fouillé la vie privée de quelqu'un"],
+        ["Que ton journal intime soit publié", "Que ton pire secret soit diffusé en podcast"]
+      ]
+    }
+  ]
+}

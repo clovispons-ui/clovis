@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "node --test",
-    "seed:check:imposteur": "node imposteur/scripts/validate-seed.mjs"
+    "seed:check:imposteur": "node imposteur/scripts/validate-seed.mjs",
+    "seed:check:tu-preferes": "node tu_preferes/scripts/validate-seed.mjs"
   },
   "dependencies": {
     "react": "^19.1.1",

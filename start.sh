@@ -9,6 +9,7 @@ fi
 
 npm test
 npm run seed:check:imposteur
+npm run seed:check:tu-preferes
 
 echo
 echo "→ http://localhost:${PORT:-4173}"
