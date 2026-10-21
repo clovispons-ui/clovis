@@ -1,10 +1,10 @@
 # À couvert — jeu de l'imposteur
 
-Jeu de bluff en français, à jouer à plusieurs sur un seul appareil. Le projet n'utilise que des modules natifs Node.js, HTML, CSS et JavaScript ; aucun paquet npm externe n'est nécessaire.
+Jeu de bluff en français, à jouer à plusieurs sur un seul appareil. L'interface utilise React et Vite ; les règles, le stockage local et les données restent dans le navigateur sans backend applicatif.
 
 ## Lancer l'application
 
-Prérequis : Node.js 18 ou plus récent. Les commandes se lancent depuis la racine du dépôt.
+Prérequis : Node.js 18 ou plus récent et npm. L'application est développée avec React et Vite ; il n'y a pas de backend applicatif, et les données restent dans le navigateur. Les commandes se lancent depuis la racine du dépôt. Si nécessaire, installer d'abord les dépendances avec `npm install`.
 
 ```sh
 npm start
@@ -17,6 +17,13 @@ PORT=8080 npm start
 ```
 
 Par défaut, le serveur n'écoute que sur `127.0.0.1`. Pour accéder à l'application depuis un autre appareil du même réseau local, il est possible de définir `HOST=0.0.0.0` ; cela expose toutefois l'application aux appareils du réseau et ne chiffre pas le trafic.
+
+Créer et prévisualiser la version de production depuis la racine :
+
+```sh
+npm run build
+npm run preview
+```
 
 ## Tester et vérifier les données
 
@@ -33,10 +40,10 @@ La banque initiale contient **300 mots simples** avec un indice et son niveau de
 
 - **Mister White** : les civils reçoivent un mot commun ; les Mister White n'ont aucun mot et peuvent deviner le mot civil après leur élimination.
 - **Indice** : l'imposteur reçoit une piste (et son niveau de précision) à la place du mot.
-- **Mot proche** : les civils et imposteurs reçoivent deux termes associés. Mister White peut occuper une place du quota adverse ; cette option n'est disponible qu'à partir de cinq joueurs et d'au moins deux rôles adverses.
+- **Mot proche** : les civils et imposteurs reçoivent deux termes associés. Mister White peut occuper une place du quota d'imposteurs ; cette option n'est disponible qu'à partir de cinq joueurs et d'au moins deux imposteurs.
 - Un joueur civil est désigné au hasard pour commencer la discussion ; il n'y a pas de tour de parole affiché. Le groupe touche ensuite directement le nom du joueur à éliminer.
 - Le chrono, s'il est activé, couvre la discussion entière et mène ensuite au choix de la personne à éliminer.
-- L'équipe adverse gagne dès qu'elle est aussi nombreuse que les civils encore actifs. Pour éviter qu'une partie ne soit déjà gagnée au premier écran, le nombre de rôles adverses est limité à moins de la moitié des joueurs (arrondi vers le bas).
+- Les imposteurs gagnent dès qu'ils sont aussi nombreux que les civils encore actifs. Pour éviter qu'une partie ne soit déjà gagnée au premier écran, leur nombre est limité à moins de la moitié des joueurs (arrondi vers le bas).
 - En mode Mister White, une mauvaise réponse de dernière chance donne la victoire aux civils. En mode mot proche, Mister White est éliminé après une mauvaise réponse et la partie continue si les conditions de victoire ne sont pas atteintes.
 
 ## Protection des secrets
@@ -61,9 +68,9 @@ imposteur/
 │   ├── config.js
 │   ├── database.js
 │   ├── game.js
-│   ├── main.js
+│   ├── main.jsx
 │   ├── repository.js
-│   └── ui.js
+│   └── ...
 └── tests/
     ├── game.test.mjs
     └── seed.test.mjs
@@ -74,6 +81,6 @@ Les éléments partagés avec les autres mini-jeux viennent de `common/` à la r
 - `src/game.js` contient les fonctions de jeu indépendantes de l'interface, notamment le choix d'une personne civile pour commencer et l'élimination directe.
 - `src/database.js` crée les magasins IndexedDB et importe le seed.
 - `src/repository.js` filtre et tire les mots/paires en consultant l'historique.
-- `src/ui.js` dessine les écrans et n'affiche les secrets que lors de leur révélation autorisée.
-- `src/main.js` relie les écrans, les éliminations directes, les règles et le minuteur.
+- `src/main.jsx` contient l'interface React et relie les écrans aux règles et au minuteur.
+- `styles.css` applique le thème clair/sombre et les dispositions adaptées au téléphone.
 - `scripts/validate-seed.mjs` contrôle les quantités et références du fichier seed.

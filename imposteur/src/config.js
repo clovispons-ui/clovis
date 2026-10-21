@@ -46,10 +46,10 @@ export function validateConfiguration(input) {
 
   const impostorCount = Number(input.impostorCount);
   if (!Number.isInteger(impostorCount) || impostorCount < 1 || impostorCount > maxPlayableImpostors(names.length)) {
-    errors.push("Le nombre de rôles adverses doit rester inférieur au nombre de civils au début de la partie.");
+    errors.push("Le nombre d'imposteurs doit rester inférieur au nombre de civils au début de la partie.");
   }
   if (input.mode === GAME_MODES.CLOSE_WORD && input.includeMisterWhite && impostorCount < 2) {
-    errors.push("Avec Mister White en mode mot proche, il faut au moins deux rôles adverses.");
+    errors.push("Avec Mister White en mode mot proche, il faut au moins deux imposteurs.");
   }
 
   const timerDuration = Number(input.timerDuration);
