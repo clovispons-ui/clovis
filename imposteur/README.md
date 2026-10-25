@@ -34,14 +34,15 @@ npm test
 npm run seed:check:imposteur
 ```
 
-La banque initiale contient **300 mots simples** avec un indice et son niveau de précision, ainsi que **100 paires de mots associés mais plus distincts** (par exemple « chat / souris » ou « train / rail »), réparties dans 10 catégories.
+La banque initiale contient **300 mots simples**, chacun avec un indice dédié et son niveau de précision, ainsi que **100 paires de mots associés mais plus distincts** (par exemple « chat / souris » ou « train / rail »), réparties dans 10 catégories.
 
 ## Règles disponibles
 
 - **Mister White** : les civils reçoivent un mot commun ; les Mister White n'ont aucun mot et peuvent deviner le mot civil après leur élimination.
-- **Indice** : l'imposteur reçoit une piste (et son niveau de précision) à la place du mot.
+- **Indice** : l'imposteur reçoit un mot associé à la cible, assez évocateur pour l'orienter sans la définir directement.
 - **Mot proche** : les civils et imposteurs reçoivent deux termes associés. Mister White peut occuper une place du quota d'imposteurs ; cette option n'est disponible qu'à partir de cinq joueurs et d'au moins deux imposteurs.
 - Un joueur civil est désigné au hasard pour commencer la discussion ; il n'y a pas de tour de parole affiché. Le groupe touche ensuite directement le nom du joueur à éliminer.
+- Une fois la distribution terminée, chaque joueur peut demander à revoir son mot pendant la discussion en choisissant son pseudo. Le mot reste masqué jusqu'à sa révélation privée.
 - La discussion est libre, sans compte à rebours. Le groupe passe au choix de la personne à éliminer quand il est prêt.
 - Les imposteurs gagnent dès qu'ils sont aussi nombreux que les civils encore actifs. Pour éviter qu'une partie ne soit déjà gagnée au premier écran, leur nombre est limité à moins de la moitié des joueurs (arrondi vers le bas).
 - En mode Mister White, une mauvaise réponse de dernière chance donne la victoire aux civils. En mode mot proche, Mister White est éliminé après une mauvaise réponse et la partie continue si les conditions de victoire ne sont pas atteintes.

@@ -13,7 +13,7 @@
   --accent-strong: #c9f49b;
   --accent-ink: #142013;
   --lavender: #c8b8ff;
-  --danger: #ffaaa8;
+  --danger: #ff2925;
   --shadow: 0 25px 80px rgba(0, 0, 0, 0.28);
   --page-glow: rgba(113, 133, 198, 0.12);
 }
@@ -945,6 +945,10 @@ p {
   font-size: clamp(35px, 7vw, 53px);
 }
 
+.reveal-player-name--adversary {
+  color: var(--danger);
+}
+
 .reveal-instruction {
   margin-bottom: 22px;
   color: var(--muted);
@@ -995,6 +999,15 @@ p {
 .secret-panel--word {
   border-color: color-mix(in srgb, var(--accent) 40%, transparent);
   background: color-mix(in srgb, var(--accent) 10%, var(--surface-strong));
+}
+
+.secret-panel--adversary {
+  border-color: color-mix(in srgb, var(--danger) 40%, transparent);
+  background: color-mix(in srgb, var(--danger) 11%, var(--surface-strong));
+}
+
+.secret-panel--adversary strong {
+  color: var(--danger);
 }
 
 .secret-kicker {
@@ -1054,8 +1067,27 @@ p {
   margin-bottom: 23px;
 }
 
+.discussion-category {
+  display: inline-flex;
+  min-height: 30px;
+  margin: -10px 0 10px;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-strong);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 650;
+}
+
 .discussion-main .button {
   margin-top: auto;
+}
+
+.review-word-button,
+.review-cancel {
+  margin-top: 9px;
 }
 
 .turn-hint {

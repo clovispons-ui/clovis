@@ -20,12 +20,23 @@ for (const category of seed.categories) {
 
 for (const set of seed.wordSets) {
   if (!categoryIds.has(set.categoryId)) errors.push(`Catégorie inconnue pour le groupe de mots : ${set.categoryId}.`);
-  if (!set.clue?.trim()) errors.push(`Indice absent pour la catégorie ${set.categoryId}.`);
+  if (!Array.isArray(set.clues) || set.clues.length !== set.values.length) {
+    errors.push(`Chaque mot doit avoir son propre indice dans la catégorie ${set.categoryId}.`);
+  }
   if (!["vague", "moyenne", "precise"].includes(set.cluePrecision)) {
     errors.push(`Précision d'indice invalide pour la catégorie ${set.categoryId}.`);
   }
-  for (const value of set.values) {
+  for (const [index, value] of set.values.entries()) {
     if (!value.trim()) errors.push(`Mot vide dans la catégorie ${set.categoryId}.`);
+    if (!set.clues?.[index]?.trim()) {
+      errors.push(`Indice vide pour le mot ${value} dans la catégorie ${set.categoryId}.`);
+    }
+    if (set.clues?.[index]?.trim().split(/\s+/).length !== 1) {
+      errors.push(`L'indice doit être un seul mot pour ${value} dans la catégorie ${set.categoryId}.`);
+    }
+    if (set.clues?.[index]?.trim().toLocaleLowerCase("fr") === normalize(value)) {
+      errors.push(`L'indice révèle directement le mot ${value} dans la catégorie ${set.categoryId}.`);
+    }
     const id = `${set.categoryId}:${normalize(value)}`;
     if (uniqueWordIds.has(id)) errors.push(`Mot en double dans la catégorie ${set.categoryId} : ${value}.`);
     uniqueWordIds.add(id);

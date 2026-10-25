@@ -35,6 +35,7 @@ const INITIAL_STATE = {
   roundNumber: 0,
   dealIndex: 0,
   revealed: false,
+  reviewPlayerId: null,
   startingPlayerId: null,
   eliminatedPlayerId: null,
   winner: null,
@@ -101,6 +102,31 @@ function RoundTopline({ eyebrow, label }) {
       <span className="eyebrow"><span className="eyebrow-line" />{eyebrow}</span>
       <span className="round-pill">{label}</span>
     </div>
+  );
+}
+
+function PlayerSecret({ player }) {
+  const roleText = player.role === "civilian"
+    ? "Tu es dans l'équipe des civils."
+    : player.role === "misterWhite"
+      ? "Tu es Mister White."
+      : "Tu es l'imposteur.";
+  let secretContent;
+  if (player.secret?.kind === "clue") {
+    secretContent = <><span className="secret-kicker">TON INDICE · {player.secret.precision}</span><strong>{player.secret.value}</strong></>;
+  } else if (player.secret?.kind === "word") {
+    secretContent = <><span className="secret-kicker">TON MOT</span><strong>{player.secret.value}</strong></>;
+  } else {
+    secretContent = <><span className="secret-kicker">TON RÔLE</span><strong>Mister White</strong></>;
+  }
+
+  return (
+    <>
+      <p className="reveal-instruction">{roleText}</p>
+      <div className={`secret-panel ${player.secret?.kind === "word" ? "secret-panel--word" : ""} ${player.secret?.kind === "clue" || player.role === "misterWhite" ? "secret-panel--adversary" : ""}`} aria-live="polite">
+        {secretContent}
+      </div>
+    </>
   );
 }
 
@@ -172,28 +198,23 @@ function App() {
   }, []);
 
   useEffect(() => {
-    function hideSecret() {
-      if (document.hidden) {
-        setGame((current) => (
-          current.screen === "deal" && current.revealed
-            ? { ...current, revealed: false }
-            : current
-        ));
-      }
-    }
-    function hideSecretOnBlur() {
+    function hideRevealedContent() {
       setGame((current) => (
-        current.screen === "deal" && current.revealed
+        (current.screen === "deal" || current.screen === "reviewSecret") && current.revealed
           ? { ...current, revealed: false }
           : current
       ));
     }
 
+    function hideSecret() {
+      if (document.hidden) hideRevealedContent();
+    }
+
     document.addEventListener("visibilitychange", hideSecret);
-    window.addEventListener("blur", hideSecretOnBlur);
+    window.addEventListener("blur", hideRevealedContent);
     return () => {
       document.removeEventListener("visibilitychange", hideSecret);
-      window.removeEventListener("blur", hideSecretOnBlur);
+      window.removeEventListener("blur", hideRevealedContent);
     };
   }, []);
 
@@ -393,6 +414,28 @@ function App() {
           setGame((current) => ({ ...current, revealed: false }));
           enterDiscussion();
         }
+        break;
+      case "review-word":
+        setGame((current) => ({ ...current, screen: "reviewSelect", revealed: false, reviewPlayerId: null }));
+        break;
+      case "select-review-player":
+        setGame((current) => ({
+          ...current,
+          screen: "reviewSecret",
+          revealed: false,
+          reviewPlayerId: playerId,
+        }));
+        break;
+      case "reveal-review-word":
+        setGame((current) => ({ ...current, revealed: true }));
+        break;
+      case "hide-review-word":
+        setGame((current) => ({
+          ...current,
+          screen: "discussion",
+          revealed: false,
+          reviewPlayerId: null,
+        }));
         break;
       case "next-turn":
         beginEliminationChoice();
@@ -596,19 +639,6 @@ function App() {
     if (game.screen === "config") return renderConfiguration();
     if (game.screen === "deal") {
       const player = game.round.players[game.dealIndex];
-      const roleText = player.role === "civilian"
-        ? "Tu es dans l'équipe des civils."
-        : player.role === "misterWhite"
-          ? "Tu es Mister White."
-          : "Tu es l'imposteur.";
-      let secretContent;
-      if (player.secret?.kind === "clue") {
-        secretContent = <><span className="secret-kicker">TON INDICE · {player.secret.precision}</span><strong>{player.secret.value}</strong></>;
-      } else if (player.secret?.kind === "word") {
-        secretContent = <><span className="secret-kicker">TON MOT</span><strong>{player.secret.value}</strong></>;
-      } else {
-        secretContent = <><span className="secret-kicker">TON RÔLE</span><strong>Mister White</strong></>;
-      }
       return (
         <section className="screen screen--play">
           <RoundTopline eyebrow="Distribution secrète" label={`Joueur ${game.dealIndex + 1} / ${game.round.players.length}`} />
@@ -621,9 +651,8 @@ function App() {
             {game.revealed ? (
               <>
                 <span className="card-overline">C'EST À TON TOUR</span>
-                <h1>{player.name}</h1>
-                <p className="reveal-instruction">{roleText}</p>
-                <div className={`secret-panel ${player.secret?.kind === "word" ? "secret-panel--word" : ""}`} aria-live="polite">{secretContent}</div>
+                <h1 className={player.role !== "civilian" && game.round.mode !== GAME_MODES.CLOSE_WORD ? "reveal-player-name--adversary" : ""}>{player.name}</h1>
+                <PlayerSecret player={player} />
                 <p className="keep-secret">Mémorise cette information, puis passe l'appareil.</p>
                 <button className="button button--primary button--full" type="button" onClick={() => handleAction("hide-next")}>
                   <span>Masquer et passer au suivant</span><span className="button-arrow" aria-hidden="true">→</span>
@@ -645,8 +674,83 @@ function App() {
         </section>
       );
     }
+    if (game.screen === "reviewSelect") {
+      return (
+        <section className="screen screen--play">
+          <RoundTopline eyebrow="Rappel du mot" label={`Manche ${game.roundNumber}`} />
+          <div className="choice-card panel">
+            <span className="card-overline">DISTRIBUTION TERMINÉE</span>
+            <h1>Qui veut revoir son mot&nbsp;?</h1>
+            <p className="reveal-instruction">Choisis ton pseudo, puis passe l'écran à toi seul avant de révéler.</p>
+            <div className="elimination-choices">
+              {game.round.players.map((player) => (
+                <button
+                  className="elimination-choice"
+                  type="button"
+                  key={player.id}
+                  onClick={() => handleAction("select-review-player", player.id)}
+                >
+                  <span className="choice-avatar" aria-hidden="true">{player.name.slice(0, 1).toLocaleUpperCase("fr")}</span>
+                  <span className="choice-name">{player.name}</span>
+                  <span className="choice-arrow" aria-hidden="true">→</span>
+                </button>
+              ))}
+            </div>
+            <button className="button button--secondary button--full review-cancel" type="button" onClick={() => handleAction("hide-review-word")}>
+              Retour à la discussion
+            </button>
+          </div>
+        </section>
+      );
+    }
+    if (game.screen === "reviewSecret") {
+      const player = game.round.players.find(({ id }) => id === game.reviewPlayerId);
+      if (!player) {
+        return (
+          <section className="screen screen--play">
+            <div className="error-card panel" role="alert">
+              <h1>Joueur introuvable</h1>
+              <p>Retourne à la discussion et réessaie.</p>
+              <button className="button button--secondary" type="button" onClick={() => handleAction("hide-review-word")}>Retour à la discussion</button>
+            </div>
+          </section>
+        );
+      }
+      return (
+        <section className="screen screen--play">
+          <RoundTopline eyebrow="Rappel du mot" label={player.name} />
+          <div className="reveal-card panel">
+            {game.revealed ? (
+              <>
+                <span className="card-overline">C'EST À TON TOUR</span>
+                <h1 className={player.role !== "civilian" && game.round.mode !== GAME_MODES.CLOSE_WORD ? "reveal-player-name--adversary" : ""}>{player.name}</h1>
+                <PlayerSecret player={player} />
+                <p className="keep-secret">Mémorise ton information, puis masque-la avant de repasser l'appareil.</p>
+                <button className="button button--primary button--full" type="button" onClick={() => handleAction("hide-review-word")}>
+                  <span>Masquer et retourner à la discussion</span><span className="button-arrow" aria-hidden="true">→</span>
+                </button>
+              </>
+            ) : (
+              <>
+                <span className="reveal-symbol" aria-hidden="true"><span /><span /><span /></span>
+                <span className="card-overline">RÉVÉLATION PRIVÉE</span>
+                <h1>Passe l'écran à<br /><span>{player.name}</span></h1>
+                <p className="reveal-instruction">Vérifie que personne d'autre ne regarde.</p>
+                <button className="button button--primary button--full" type="button" onClick={() => handleAction("reveal-review-word")}>
+                  <span>Révéler mon mot</span><span className="button-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button className="button button--secondary button--full review-cancel" type="button" onClick={() => handleAction("hide-review-word")}>
+                  Annuler
+                </button>
+              </>
+            )}
+          </div>
+        </section>
+      );
+    }
     if (game.screen === "discussion") {
       const startingPlayer = game.round.players.find(({ id }) => id === game.startingPlayerId);
+      const selectedCategory = game.categories.find(({ id }) => id === game.round.content.categoryId);
       return (
         <section className="screen screen--play">
           <RoundTopline eyebrow="Discussion" label={`Manche ${game.roundNumber}`} />
@@ -657,7 +761,11 @@ function App() {
               <div className="speaker-avatar" aria-hidden="true">{(startingPlayer?.name ?? "?").slice(0, 1).toLocaleUpperCase("fr")}</div>
               <h1>{startingPlayer?.name ?? "Groupe"}</h1>
               <p className="reveal-instruction">Commencez par cette personne, puis discutez librement.</p>
+              <p className="discussion-category">Catégorie : {selectedCategory?.label ?? game.round.content.categoryId}</p>
               <div className="turn-hint"><span className="turn-hint-dot" />Discutez librement, puis choisissez une personne.</div>
+              <button className="button button--secondary button--full review-word-button" type="button" onClick={() => handleAction("review-word")}>
+                Revoir un mot
+              </button>
               <button className="button button--primary button--full" type="button" onClick={beginEliminationChoice}>
                 <span>Choisir qui éliminer</span><span className="button-arrow" aria-hidden="true">→</span>
               </button>

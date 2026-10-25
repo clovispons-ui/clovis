@@ -13,7 +13,12 @@ test("tous les contenus sont rattachés à une catégorie et les paires sont dis
   const categories = new Set(seed.categories.map((category) => category.id));
   for (const set of seed.wordSets) {
     assert.ok(categories.has(set.categoryId));
-    assert.ok(set.clue.trim());
+    assert.equal(set.clues.length, set.values.length);
+    assert.ok(set.clues.every((clue) => clue.trim()));
+    assert.ok(set.clues.every((clue) => !/\s/.test(clue.trim())));
+    assert.ok(set.clues.every((clue, index) => (
+      clue.trim().toLocaleLowerCase("fr") !== set.values[index].trim().toLocaleLowerCase("fr")
+    )));
     assert.ok(["vague", "moyenne", "precise"].includes(set.cluePrecision));
   }
   for (const set of seed.pairSets) {

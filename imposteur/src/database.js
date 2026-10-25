@@ -43,7 +43,7 @@ export async function importSeed(database, seed) {
         id: `word-${set.categoryId}-${index + 1}`,
         categoryId: set.categoryId,
         value,
-        clue: set.clue,
+        clue: set.clues[index],
         cluePrecision: set.cluePrecision,
         source: "seed",
         active: true,
