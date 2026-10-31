@@ -18,6 +18,7 @@ export default defineConfig({
         loupGarou: resolve(rootDirectory, "loup-garou/index.html"),
         imposteur: resolve(rootDirectory, "imposteur/index.html"),
         tuPreferes: resolve(rootDirectory, "tu_preferes/index.html"),
+        familleEnOr: resolve(rootDirectory, "FamilleEnOr/index.html"),
       },
     },
   },

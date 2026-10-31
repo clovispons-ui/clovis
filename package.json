@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "test": "node --test",
     "seed:check:imposteur": "node imposteur/scripts/validate-seed.mjs",
-    "seed:check:tu-preferes": "node tu_preferes/scripts/validate-seed.mjs"
+    "seed:check:tu-preferes": "node tu_preferes/scripts/validate-seed.mjs",
+    "seed:check:famille-en-or": "node FamilleEnOr/scripts/validate-seed.mjs",
+    "seed:build:famille-en-or": "node FamilleEnOr/scripts/build-french-seed.mjs"
   },
   "dependencies": {
     "react": "^19.1.1",

@@ -1,0 +1,1953 @@
+[
+  {
+    "sourceId": "train_q685",
+    "question": "Quel aliment vaut-il mieux éviter avant un rendez-vous amoureux ?",
+    "answers": [
+      { "text": "De l'ail", "aliases": ["ail"] },
+      { "text": "Des spaghettis", "aliases": ["spaghetti", "pâtes"] },
+      { "text": "Du poisson", "aliases": ["poisson"] },
+      { "text": "Des ailes de poulet", "aliases": ["ailes de poulet"] }
+    ]
+  },
+  {
+    "sourceId": "train_q769",
+    "question": "Quel aliment sert souvent à l'apéritif ?",
+    "answers": [
+      { "text": "Du fromage", "aliases": ["fromage"] },
+      { "text": "Des ailes de poulet", "aliases": ["ailes de poulet"] },
+      { "text": "Des crevettes", "aliases": ["crevette"] },
+      { "text": "Des chips", "aliases": ["chips"] },
+      { "text": "De la salade", "aliases": ["salade"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1105",
+    "question": "Qu'est-ce qu'on peut boire dans une bouteille ?",
+    "answers": [
+      { "text": "Un soda", "aliases": ["soda", "limonade"] },
+      { "text": "De l'eau", "aliases": ["eau"] },
+      { "text": "De la bière", "aliases": ["bière"] },
+      { "text": "Du jus", "aliases": ["jus de fruits", "jus"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3188",
+    "question": "Quelle boisson commandée dans un café est difficile à préparer chez soi ?",
+    "answers": [
+      { "text": "Un café latte", "aliases": ["latte", "café au lait mousseux"] },
+      { "text": "Un cappuccino", "aliases": ["capuccino"] },
+      { "text": "Un expresso", "aliases": ["espresso"] },
+      { "text": "Un café frappé", "aliases": ["frappé"] },
+      { "text": "Un moka", "aliases": ["mocha"] },
+      { "text": "Un café", "aliases": [] }
+    ]
+  },
+  {
+    "sourceId": "train_q6218",
+    "question": "Quel aliment peut parfumer très fort toute la cuisine pendant la cuisson ?",
+    "answers": [
+      { "text": "Du poisson", "aliases": ["poisson"] },
+      { "text": "Des oignons", "aliases": ["oignon"] },
+      { "text": "De l'ail", "aliases": ["ail"] },
+      { "text": "Du chou", "aliases": ["chou"] },
+      { "text": "Des biscuits", "aliases": ["gâteaux", "cookies"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2722",
+    "question": "Que grignote-t-on souvent quand on a un petit creux tard le soir ?",
+    "answers": [
+      { "text": "Des chips", "aliases": ["chips"] },
+      { "text": "Des biscuits", "aliases": ["gâteaux secs", "cookies"] },
+      { "text": "De la glace", "aliases": ["glace"] },
+      { "text": "Une pizza", "aliases": ["pizza"] },
+      { "text": "Un sandwich", "aliases": ["sandwich"] },
+      { "text": "Des céréales", "aliases": ["céréales"] },
+      { "text": "Du pop-corn", "aliases": ["popcorn"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1257",
+    "question": "Que commande-t-on souvent dans un restaurant italien ?",
+    "answers": [
+      { "text": "Des spaghettis", "aliases": ["spaghetti", "des pâtes"] },
+      { "text": "Des lasagnes", "aliases": ["lasagne"] },
+      { "text": "Une pizza", "aliases": ["pizza"] },
+      { "text": "Des cannoli", "aliases": ["cannolo"] },
+      { "text": "Des aubergines à la parmigiana", "aliases": ["aubergines parmesan", "parmigiana"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3705",
+    "question": "Que peut-on commander dans un restaurant de fruits de mer ?",
+    "answers": [
+      { "text": "Des crevettes", "aliases": ["crevette"] },
+      { "text": "Du homard", "aliases": ["homard"] },
+      { "text": "Du poisson", "aliases": ["poisson"] },
+      { "text": "Du crabe", "aliases": ["crabe"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2074",
+    "question": "Quel fruit mange-t-on souvent avec du fromage ?",
+    "answers": [
+      { "text": "Du raisin", "aliases": ["raisins"] },
+      { "text": "Une pomme", "aliases": ["pommes"] },
+      { "text": "Des fraises", "aliases": ["fraise"] },
+      { "text": "Une poire", "aliases": ["poires"] }
+    ]
+  },
+  {
+    "sourceId": "train_q195",
+    "question": "Cite un légume qui n'est pas vert.",
+    "answers": [
+      { "text": "Une carotte", "aliases": ["carottes"] },
+      { "text": "Du maïs", "aliases": ["mais", "épi de maïs"] },
+      { "text": "Du potiron", "aliases": ["citrouille", "courge"] },
+      { "text": "Une pomme de terre", "aliases": ["patate"] },
+      { "text": "Une betterave", "aliases": ["betteraves"] },
+      { "text": "Un chou-fleur", "aliases": ["chou fleur"] },
+      { "text": "Une aubergine", "aliases": ["aubergines"] }
+    ]
+  },
+  {
+    "sourceId": "train_q8032",
+    "question": "Qu'est-ce qu'on met souvent sur une pizza ?",
+    "answers": [
+      { "text": "Du fromage", "aliases": ["fromage", "mozzarella"] },
+      { "text": "Du pepperoni", "aliases": ["pepperoni", "saucisson épicé"] },
+      { "text": "Des champignons", "aliases": ["champignon"] },
+      { "text": "De la saucisse", "aliases": ["saucisses"] },
+      { "text": "De la sauce tomate", "aliases": ["sauce"] },
+      { "text": "De l'ail", "aliases": ["ail"] }
+    ]
+  },
+  {
+    "sourceId": "train_q7301",
+    "question": "Avec quoi sert-on souvent le fromage à l'apéritif ?",
+    "answers": [
+      { "text": "Des crackers", "aliases": ["biscuits salés"] },
+      { "text": "Du vin", "aliases": ["vin"] },
+      { "text": "Du pain", "aliases": ["baguette"] },
+      { "text": "De la charcuterie", "aliases": ["jambon", "saucisson"] }
+    ]
+  },
+  {
+    "sourceId": "dev-scraped_q5753",
+    "question": "Quelle chose précise peut sentir la cannelle ?",
+    "answers": [
+      { "text": "Une brioche roulée à la cannelle", "aliases": ["roulé à la cannelle", "cinnamon roll"] },
+      { "text": "Du pain perdu", "aliases": ["pain perdu"] },
+      { "text": "Des biscuits", "aliases": ["cookies", "gâteaux"] },
+      { "text": "Une tarte aux pommes", "aliases": ["tarte pomme cannelle"] },
+      { "text": "Une bougie parfumée", "aliases": ["bougie à la cannelle"] },
+      { "text": "Un bonbon", "aliases": ["chewing-gum", "gomme à mâcher"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1170",
+    "question": "Que peut-on acheter au snack d'une piscine ?",
+    "answers": [
+      { "text": "Des boissons fraîches", "aliases": ["soda", "boissons gazeuses"] },
+      { "text": "Une glace", "aliases": ["glaces"] },
+      { "text": "Un hot-dog", "aliases": ["hot dog"] },
+      { "text": "Des chips", "aliases": ["chips"] },
+      { "text": "Un fruit", "aliases": ["des fruits"] },
+      { "text": "Une bière", "aliases": ["bière"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2591",
+    "question": "Quel encas peut-on garder dans un tiroir au travail ?",
+    "answers": [
+      { "text": "Du pop-corn", "aliases": ["popcorn"] },
+      { "text": "Des biscuits", "aliases": ["cookies", "gâteaux"] },
+      { "text": "Des bretzels", "aliases": ["pretzels"] },
+      { "text": "Une barre de chocolat", "aliases": ["chocolat"] },
+      { "text": "Des cacahuètes", "aliases": ["arachides"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1476",
+    "question": "À part l'eau, quel liquide utilise-t-on en cuisine ?",
+    "answers": [
+      { "text": "De l'huile", "aliases": ["huile"] },
+      { "text": "Du lait", "aliases": ["lait"] },
+      { "text": "Du vin", "aliases": ["vin"] },
+      { "text": "Du bouillon", "aliases": ["bouillon"] }
+    ]
+  },
+  {
+    "sourceId": "train_q139",
+    "question": "Qu'offre-t-on souvent à quelqu'un qui emménage dans un nouveau logement ?",
+    "answers": [
+      { "text": "Une plante", "aliases": ["plante verte"] },
+      { "text": "Un vase avec des fleurs", "aliases": ["vase", "fleurs"] },
+      { "text": "Un panier de fruits", "aliases": ["corbeille de fruits"] },
+      { "text": "Du linge de maison", "aliases": ["draps", "serviettes"] },
+      { "text": "Une bouteille de vin", "aliases": ["vin"] },
+      { "text": "Un grille-pain", "aliases": ["grille pain"] },
+      { "text": "De la vaisselle", "aliases": ["assiettes"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1059",
+    "question": "Quelle partie de la maison déteste-t-on nettoyer ?",
+    "answers": [
+      { "text": "La salle de bains", "aliases": ["salle de bain", "la douche"] },
+      { "text": "La cuisinière", "aliases": ["le four", "la plaque de cuisson"] },
+      { "text": "Les sols", "aliases": ["le sol", "le plancher"] },
+      { "text": "Les fenêtres", "aliases": ["vitres"] },
+      { "text": "Le réfrigérateur", "aliases": ["frigo"] },
+      { "text": "La vaisselle sale", "aliases": ["les assiettes sales"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1134",
+    "question": "Que peut-on faire dans son bain ?",
+    "answers": [
+      { "text": "Lire", "aliases": ["lire un livre"] },
+      { "text": "Se détendre", "aliases": ["se relaxer", "relaxer"] },
+      { "text": "Écouter de la musique", "aliases": ["musique"] },
+      { "text": "Chanter", "aliases": [] },
+      { "text": "Boire un verre de vin", "aliases": ["boire du vin"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1031",
+    "question": "Que fait-on souvent lors du grand ménage de printemps ?",
+    "answers": [
+      { "text": "Nettoyer les vitres", "aliases": ["laver les fenêtres"] },
+      { "text": "Faire la poussière", "aliases": ["épousseter"] },
+      { "text": "Trier et ranger les placards", "aliases": ["ranger les placards", "trier les vêtements"] },
+      { "text": "Donner ou vendre des objets inutilisés", "aliases": ["faire du tri", "vide-grenier"] },
+      { "text": "Ranger le garage", "aliases": ["nettoyer le garage"] }
+    ]
+  },
+  {
+    "sourceId": "train_q784",
+    "question": "Où peut-on égarer ses clés ?",
+    "answers": [
+      { "text": "À la maison", "aliases": ["chez soi", "dans la maison"] },
+      { "text": "Dans un centre commercial", "aliases": ["centre commercial", "magasin"] },
+      { "text": "Dans son sac", "aliases": ["sac à main", "sacoche"] },
+      { "text": "Dans la voiture", "aliases": ["voiture"] },
+      { "text": "Dans un bar", "aliases": ["bar"] },
+      { "text": "À la plage", "aliases": ["plage"] }
+    ]
+  },
+  {
+    "sourceId": "train_q992",
+    "question": "Qu'est-ce qu'on peut fermer ?",
+    "answers": [
+      { "text": "Une porte", "aliases": ["porte"] },
+      { "text": "Une fenêtre", "aliases": ["fenêtre"] },
+      { "text": "Sa bouche", "aliases": ["bouche"] },
+      { "text": "Les yeux", "aliases": ["yeux"] },
+      { "text": "Un livre", "aliases": ["livre"] }
+    ]
+  },
+  {
+    "sourceId": "train_q6721",
+    "question": "Qu'est-ce qu'on oublie souvent d'éteindre ?",
+    "answers": [
+      { "text": "Les lumières", "aliases": ["la lumière", "les lampes"] },
+      { "text": "La télévision", "aliases": ["la télé", "le téléviseur"] },
+      { "text": "La cafetière", "aliases": ["machine à café"] },
+      { "text": "La cuisinière", "aliases": ["le four", "les plaques"] }
+    ]
+  },
+  {
+    "sourceId": "train_q6366",
+    "question": "Qu'est-ce qu'on garde souvent à portée de main devant la télévision ?",
+    "answers": [
+      { "text": "La télécommande", "aliases": ["télécommande"] },
+      { "text": "Le téléphone", "aliases": ["portable", "smartphone"] },
+      { "text": "Un encas ou une boisson", "aliases": ["boisson", "quelque chose à grignoter"] },
+      { "text": "Une cigarette", "aliases": ["cigarettes"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1046",
+    "question": "Avec quoi se nettoie-t-on les dents ?",
+    "answers": [
+      { "text": "Une brosse à dents", "aliases": ["brosse dents"] },
+      { "text": "Du fil dentaire", "aliases": ["fil pour les dents"] },
+      { "text": "Du dentifrice", "aliases": ["dentifrice"] },
+      { "text": "Un bain de bouche", "aliases": ["bain bouche"] }
+    ]
+  },
+  {
+    "sourceId": "train_q441",
+    "question": "Qu'est-ce qu'on peut demander à table pendant un repas ?",
+    "answers": [
+      { "text": "Le sel et le poivre", "aliases": ["sel", "poivre"] },
+      { "text": "Un verre", "aliases": ["verre d'eau"] },
+      { "text": "Les couverts", "aliases": ["fourchette", "couteau"] },
+      { "text": "Du pain", "aliases": ["pain"] },
+      { "text": "Une serviette", "aliases": ["serviettes"] },
+      { "text": "Du beurre", "aliases": ["beurre"] },
+      { "text": "Un plat ou de la nourriture", "aliases": ["le plat", "à manger"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2479",
+    "question": "Qu'est-ce qu'on peut remplir d'eau ?",
+    "answers": [
+      { "text": "Une baignoire", "aliases": ["bain"] },
+      { "text": "Une carafe", "aliases": ["pichet"] },
+      { "text": "Une piscine", "aliases": ["piscine"] },
+      { "text": "Un verre", "aliases": ["verre"] },
+      { "text": "Un ballon", "aliases": ["ballon de baudruche"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2449",
+    "question": "Qu'est-ce qu'on peut allumer avec une allumette ?",
+    "answers": [
+      { "text": "Une bougie", "aliases": ["des bougies"] },
+      { "text": "Une cigarette", "aliases": ["des cigarettes"] },
+      { "text": "Un barbecue", "aliases": ["barbecue"] },
+      { "text": "Un feu", "aliases": ["feu de cheminée", "cheminée"] },
+      { "text": "Une gazinière", "aliases": ["cuisinière à gaz", "brûleur à gaz"] }
+    ]
+  },
+  {
+    "sourceId": "train_q758",
+    "question": "Quel lieu de vacances peut laisser un souvenir inoubliable à un enfant ?",
+    "answers": [
+      { "text": "Un parc d'attractions", "aliases": ["Disneyland Paris", "Disney"] },
+      { "text": "La plage", "aliases": ["bord de mer"] },
+      { "text": "Un parc aquatique", "aliases": ["parc avec toboggans"] },
+      { "text": "Un grand site naturel", "aliases": ["un canyon", "un parc naturel"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1051",
+    "question": "Quel monument ou site aimerait-on visiter en voyageant en Europe ?",
+    "answers": [
+      { "text": "La tour Eiffel", "aliases": ["tour eiffel"] },
+      { "text": "Big Ben", "aliases": ["l'horloge de Westminster"] },
+      { "text": "Stonehenge", "aliases": ["les pierres de Stonehenge"] },
+      { "text": "Les Alpes", "aliases": ["les montagnes des Alpes"] },
+      { "text": "Rome", "aliases": ["la ville de Rome"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1018",
+    "question": "Où les enfants préfèrent-ils ne pas passer leurs vacances d'été ?",
+    "answers": [
+      { "text": "À l'école", "aliases": ["école"] },
+      { "text": "À la maison", "aliases": ["chez soi"] },
+      { "text": "Chez leurs grands-parents", "aliases": ["chez mamie", "chez papi"] },
+      { "text": "En colonie de vacances", "aliases": ["colonie", "camp de vacances"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2137",
+    "question": "Que cherche-t-on souvent sur une plage ?",
+    "answers": [
+      { "text": "Des coquillages", "aliases": ["coquillage"] },
+      { "text": "De l'eau", "aliases": ["la mer"] },
+      { "text": "Du sable", "aliases": ["sable"] },
+      { "text": "Des requins", "aliases": ["un requin"] },
+      { "text": "Un coin d'ombre", "aliases": ["ombre", "parasol"] },
+      { "text": "Un maître-nageur", "aliases": ["surveillant de baignade", "poste de secours"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3685",
+    "question": "Qu'est-ce qu'on peut faire pousser dans son jardin ?",
+    "answers": [
+      { "text": "Des tomates", "aliases": ["tomate"] },
+      { "text": "Des fleurs", "aliases": ["fleur"] },
+      { "text": "De la salade", "aliases": ["laitue"] },
+      { "text": "Des concombres", "aliases": ["concombre"] }
+    ]
+  },
+  {
+    "sourceId": "train_q954",
+    "question": "Qu'est-ce qu'on voit généralement dans un aéroport ?",
+    "answers": [
+      { "text": "Des avions", "aliases": ["avion"] },
+      { "text": "Des valises", "aliases": ["bagages"] },
+      { "text": "Des boutiques", "aliases": ["magasins"] },
+      { "text": "Des contrôles de sécurité", "aliases": ["contrôle de sécurité", "police"] }
+    ]
+  },
+  {
+    "sourceId": "train_q7015",
+    "question": "Qu'est-ce qui est le plus pénible quand on part camper ?",
+    "answers": [
+      { "text": "Les insectes", "aliases": ["moustiques", "mouches", "moucherons"] },
+      { "text": "Ne pas avoir de toilettes ni de douche", "aliases": ["pas de toilettes", "pas de douche"] },
+      { "text": "Les animaux sauvages", "aliases": ["bêtes sauvages"] },
+      { "text": "La pluie ou le mauvais temps", "aliases": ["pluie", "mauvais temps"] },
+      { "text": "Dormir par terre", "aliases": ["le sol dur", "mal dormir"] },
+      { "text": "La tente", "aliases": ["monter la tente"] }
+    ]
+  },
+  {
+    "sourceId": "train_q995",
+    "question": "Qu'est-ce qui peut rendre un long vol en avion encore plus interminable ?",
+    "answers": [
+      { "text": "Un bébé qui pleure", "aliases": ["des bébés qui pleurent", "enfant qui pleure"] },
+      { "text": "Les turbulences", "aliases": ["turbulence"] },
+      { "text": "Le mauvais temps", "aliases": ["orage", "tempête"] },
+      { "text": "Le manque de place pour les jambes", "aliases": ["pas de place pour les jambes", "être serré"] },
+      { "text": "Les retards", "aliases": ["retard"] }
+    ]
+  },
+  {
+    "sourceId": "train_q7654",
+    "question": "Qu'est-ce qu'on achète et qu'on utilise surtout le matin ?",
+    "answers": [
+      { "text": "Du café", "aliases": ["café"] },
+      { "text": "Une machine à café", "aliases": ["cafetière", "machine café"] },
+      { "text": "Une brosse à dents", "aliases": ["brosse dents"] },
+      { "text": "Des céréales", "aliases": ["céréales"] },
+      { "text": "Du dentifrice", "aliases": ["dentifrice"] },
+      { "text": "Du déodorant", "aliases": ["déodorant"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1225",
+    "question": "Quel jour commence-t-on déjà à penser au week-end ?",
+    "answers": [
+      { "text": "Le lundi", "aliases": ["lundi"] },
+      { "text": "Le jeudi", "aliases": ["jeudi"] },
+      { "text": "Le mercredi", "aliases": ["mercredi"] },
+      { "text": "Le mardi", "aliases": ["mardi"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1411",
+    "question": "Où serait-il vraiment dommage de passer tout son week-end ?",
+    "answers": [
+      { "text": "Au travail", "aliases": ["boulot", "bureau"] },
+      { "text": "En prison", "aliases": ["la prison"] },
+      { "text": "À l'hôpital", "aliases": ["hôpital"] },
+      { "text": "Chez soi", "aliases": ["à la maison"] },
+      { "text": "Dans un lieu de culte", "aliases": ["église", "au culte"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3779",
+    "question": "Pourquoi un étudiant pourrait-il rater un cours le matin ?",
+    "answers": [
+      { "text": "Il n'a pas entendu son réveil", "aliases": ["réveil en panne", "panne de réveil"] },
+      { "text": "Il s'est couché trop tard", "aliases": ["il a fait une nuit blanche", "il a veillé"] },
+      { "text": "Il a trop fait la fête", "aliases": ["lendemain de soirée", "gueule de bois"] },
+      { "text": "Les transports sont perturbés par la météo", "aliases": ["neige", "intempéries"] }
+    ]
+  },
+  {
+    "sourceId": "train_q6495",
+    "question": "À quoi fait-on attention quand on achète un vêtement ?",
+    "answers": [
+      { "text": "Au prix", "aliases": ["coût", "combien ça coûte"] },
+      { "text": "À la couleur", "aliases": ["couleur"] },
+      { "text": "À la marque", "aliases": ["marque préférée"] },
+      { "text": "À la matière", "aliases": ["tissu", "qualité du tissu"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1109",
+    "question": "Que peut menacer de faire un professeur quand la classe est agitée ?",
+    "answers": [
+      { "text": "Donner une heure de colle", "aliases": ["retenue", "coller les élèves"] },
+      { "text": "Supprimer la récréation", "aliases": ["pas de récré"] },
+      { "text": "Appeler les parents", "aliases": ["téléphoner aux parents"] },
+      { "text": "Envoyer un élève chez le directeur", "aliases": ["bureau du directeur", "chez la directrice"] },
+      { "text": "Donner plus de devoirs", "aliases": ["devoirs supplémentaires"] },
+      { "text": "Exclure un élève", "aliases": ["exclusion", "renvoi"] },
+      { "text": "Faire une interrogation surprise", "aliases": ["contrôle surprise", "interro surprise"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1096",
+    "question": "Quel lieu de travail peut sentir particulièrement mauvais ?",
+    "answers": [
+      { "text": "Une décharge", "aliases": ["déchetterie", "décharge publique"] },
+      { "text": "Une morgue", "aliases": ["funérarium"] },
+      { "text": "Une ferme", "aliases": ["étable"] },
+      { "text": "Une salle de sport", "aliases": ["vestiaire", "gymnase"] }
+    ]
+  },
+  {
+    "sourceId": "train_q259",
+    "question": "Qu'est-ce qui pourrait mal se passer en rentrant chez soi avec une voiture neuve ?",
+    "answers": [
+      { "text": "Avoir un accident", "aliases": ["accident", "la casser"] },
+      { "text": "Crever un pneu", "aliases": ["pneu crevé", "crevaison"] },
+      { "text": "Tomber en panne", "aliases": ["panne"] },
+      { "text": "Se mettre à pleuvoir", "aliases": ["pluie"] },
+      { "text": "La rayer", "aliases": ["rayure", "faire une rayure"] },
+      { "text": "Tomber en panne d'essence", "aliases": ["plus d'essence", "panne sèche"] },
+      { "text": "Recevoir une contravention", "aliases": ["amende", "contravention"] }
+    ]
+  },
+  {
+    "sourceId": "train_q279",
+    "question": "Quelle activité fait-on parfois pour s'amuser même si elle fait un peu peur ?",
+    "answers": [
+      { "text": "Monter dans des montagnes russes", "aliases": ["manège à sensations", "grand huit"] },
+      { "text": "Faire un saut à l'élastique", "aliases": ["saut à l'élastique"] },
+      { "text": "Regarder un film d'horreur", "aliases": ["film qui fait peur"] },
+      { "text": "Faire du parachutisme", "aliases": ["saut en parachute"] },
+      { "text": "Visiter une maison hantée", "aliases": ["maison qui fait peur", "train fantôme"] },
+      { "text": "Conduire très vite", "aliases": ["rouler vite"] },
+      { "text": "Faire de l'escalade", "aliases": ["escalade", "grimper"] }
+    ]
+  },
+  {
+    "sourceId": "train_q4929",
+    "question": "Qui peut demander à voir une pièce d'identité avec photo ?",
+    "answers": [
+      { "text": "Un policier", "aliases": ["la police", "gendarme"] },
+      { "text": "Un caissier", "aliases": ["caissière", "vendeur"] },
+      { "text": "Un employé de banque", "aliases": ["banquier", "conseiller bancaire"] },
+      { "text": "Un videur", "aliases": ["agent de sécurité", "physionomiste"] },
+      { "text": "Un barman", "aliases": ["serveur", "serveuse"] }
+    ]
+  },
+  {
+    "sourceId": "train_q988",
+    "question": "Que prépare-t-on pour organiser l'anniversaire d'un ami ?",
+    "answers": [
+      { "text": "Envoyer les invitations", "aliases": ["inviter les amis"] },
+      { "text": "Acheter ou préparer un gâteau", "aliases": ["gâteau d'anniversaire", "faire un gâteau"] },
+      { "text": "Prévoir des animations", "aliases": ["un spectacle", "des activités"] },
+      { "text": "Décorer la salle", "aliases": ["décorations", "ballons"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1047",
+    "question": "Qui peut faire partie du cortège d'un mariage ?",
+    "answers": [
+      { "text": "La mariée", "aliases": ["mariée"] },
+      { "text": "Une demoiselle d'honneur", "aliases": ["demoiselles d'honneur"] },
+      { "text": "La témoin de la mariée", "aliases": ["témoin de la mariée"] },
+      { "text": "Le marié", "aliases": ["marié"] },
+      { "text": "Le témoin du marié", "aliases": ["témoin du marié"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3718",
+    "question": "Quel cadeau d'anniversaire n'a-t-on pas envie de recevoir ?",
+    "answers": [
+      { "text": "Des vêtements", "aliases": ["un vêtement"] },
+      { "text": "De l'argent", "aliases": ["argent liquide"] },
+      { "text": "Un appareil électroménager", "aliases": ["électroménager", "un appareil ménager"] },
+      { "text": "Une facture", "aliases": ["des factures"] },
+      { "text": "Rien du tout", "aliases": ["rien"] },
+      { "text": "Un aspirateur", "aliases": ["aspirateur"] },
+      { "text": "Un livre", "aliases": ["des livres"] }
+    ]
+  },
+  {
+    "sourceId": "train_q6812",
+    "question": "Que demande-t-on aux enfants de mettre quand il fait froid ?",
+    "answers": [
+      { "text": "Un manteau", "aliases": ["manteau"] },
+      { "text": "Un bonnet", "aliases": ["bonnet", "chapeau"] },
+      { "text": "Des gants", "aliases": ["gants"] },
+      { "text": "Des bottes", "aliases": ["bottes"] },
+      { "text": "Une écharpe", "aliases": ["écharpe"] },
+      { "text": "Un pull", "aliases": ["pull-over", "sweat"] }
+    ]
+  },
+  {
+    "sourceId": "train_q959",
+    "question": "Que pourrait-on apprendre à son chien à rapporter si on était très paresseux ?",
+    "answers": [
+      { "text": "La télécommande", "aliases": ["télécommande"] },
+      { "text": "Ses chaussons", "aliases": ["pantoufles", "chaussons"] },
+      { "text": "Le journal", "aliases": ["journal"] },
+      { "text": "Une bière", "aliases": ["bière"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2724",
+    "question": "Quel est le premier symptôme qu'on remarque quand on attrape un rhume ?",
+    "answers": [
+      { "text": "Le nez qui coule", "aliases": ["nez bouché", "rhume"] },
+      { "text": "La toux", "aliases": ["tousser"] },
+      { "text": "Les éternuements", "aliases": ["éternuer"] },
+      { "text": "Le mal de gorge", "aliases": ["gorge irritée"] },
+      { "text": "La fièvre", "aliases": ["avoir de la fièvre"] },
+      { "text": "La fatigue", "aliases": ["être fatigué"] }
+    ]
+  },
+  {
+    "sourceId": "train_q4900",
+    "question": "Que fait-on pour faire de l'exercice ?",
+    "answers": [
+      { "text": "Courir", "aliases": ["course à pied", "footing"] },
+      { "text": "Pratiquer un art martial", "aliases": ["arts martiaux", "judo", "karaté"] },
+      { "text": "Faire des abdominaux", "aliases": ["abdos"] },
+      { "text": "Soulever des poids", "aliases": ["musculation", "haltères"] },
+      { "text": "Faire du yoga", "aliases": ["yoga"] }
+    ]
+  },
+  {
+    "sourceId": "train_q369",
+    "question": "Quel objet sert de jeu aux enfants et d'exercice aux adultes ?",
+    "answers": [
+      { "text": "Un vélo", "aliases": ["vélo"] },
+      { "text": "Un ballon", "aliases": ["ballon"] },
+      { "text": "Une corde à sauter", "aliases": ["corde à sauter"] },
+      { "text": "Un trampoline", "aliases": ["trampoline"] },
+      { "text": "Une piscine", "aliases": ["piscine", "nager"] }
+    ]
+  },
+  {
+    "sourceId": "train_q418",
+    "question": "Quelle notion financière est difficile à expliquer à un enfant ?",
+    "answers": [
+      { "text": "Les impôts", "aliases": ["taxes", "impôt"] },
+      { "text": "Le crédit", "aliases": ["crédit bancaire"] },
+      { "text": "Les intérêts", "aliases": ["intérêt"] },
+      { "text": "Le budget", "aliases": ["budget familial"] },
+      { "text": "Les actions en bourse", "aliases": ["la bourse", "actions"] },
+      { "text": "Le crédit immobilier", "aliases": ["prêt immobilier", "hypothèque"] },
+      { "text": "Les emprunts", "aliases": ["prêts", "emprunt"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3714",
+    "question": "À propos de quoi les voisins peuvent-ils se disputer ?",
+    "answers": [
+      { "text": "Le bruit", "aliases": ["musique trop forte", "nuisances sonores"] },
+      { "text": "La limite entre leurs terrains", "aliases": ["limite de propriété", "clôture"] },
+      { "text": "Les chiens", "aliases": ["animaux", "chien qui aboie"] },
+      { "text": "Les arbres", "aliases": ["branches", "haies"] },
+      { "text": "Les enfants", "aliases": ["enfants bruyants"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1492",
+    "question": "Pour quelle raison deux amis peuvent-ils cesser de se parler ?",
+    "answers": [
+      { "text": "Une histoire d'argent", "aliases": ["argent", "dettes"] },
+      { "text": "Une dispute au sujet des enfants", "aliases": ["enfants", "désaccord sur l'éducation"] },
+      { "text": "Une histoire de couple", "aliases": ["partenaire", "jalousie amoureuse"] },
+      { "text": "Un déménagement", "aliases": ["éloignement", "partir vivre ailleurs"] },
+      { "text": "Une dispute", "aliases": ["désaccord", "conflit"] }
+    ]
+  },
+  {
+    "sourceId": "train_q5075",
+    "question": "Quel instrument de musique peut-on entendre lors d'un mariage ?",
+    "answers": [
+      { "text": "Un orgue", "aliases": ["orgue"] },
+      { "text": "Un piano", "aliases": ["piano"] },
+      { "text": "Un violon", "aliases": ["violon"] },
+      { "text": "Une harpe", "aliases": ["harpe"] },
+      { "text": "Une guitare", "aliases": ["guitare"] },
+      { "text": "Une flûte", "aliases": ["flûte"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1172",
+    "question": "Quel fruit met-on souvent dans le sac de goûter d'un enfant ?",
+    "answers": [
+      { "text": "Une pomme", "aliases": ["pommes"] },
+      { "text": "Une banane", "aliases": ["bananes"] },
+      { "text": "Une orange", "aliases": ["oranges"] },
+      { "text": "Une pêche", "aliases": ["pêches"] },
+      { "text": "Des raisins secs", "aliases": ["raisins", "raisins séchés"] }
+    ]
+  },
+  {
+    "sourceId": "train_q8746",
+    "question": "Quel aliment mange-t-on souvent directement dans un sachet ?",
+    "answers": [
+      { "text": "Des chips", "aliases": ["chips"] },
+      { "text": "Du pop-corn", "aliases": ["popcorn"] },
+      { "text": "Des frites", "aliases": ["frite"] },
+      { "text": "Des bonbons", "aliases": ["bonbon"] },
+      { "text": "Des cacahuètes", "aliases": ["arachides"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3148",
+    "question": "Pour quelle activité vaut-il mieux porter des chaussures confortables ?",
+    "answers": [
+      { "text": "Courir", "aliases": ["course à pied"] },
+      { "text": "Marcher", "aliases": ["randonnée", "promenade"] },
+      { "text": "Danser", "aliases": ["danse"] },
+      { "text": "Faire du sport", "aliases": ["sport"] },
+      { "text": "Faire de l'exercice", "aliases": ["entraînement"] },
+      { "text": "Faire les magasins", "aliases": ["shopping", "faire du shopping"] }
+    ]
+  },
+  {
+    "sourceId": "train_q601",
+    "question": "Que fait souvent un parent quand les enfants font la sieste ?",
+    "answers": [
+      { "text": "Faire le ménage", "aliases": ["nettoyer", "ranger"] },
+      { "text": "Dormir", "aliases": ["se reposer", "faire une sieste"] },
+      { "text": "Regarder la télévision", "aliases": ["regarder la télé", "télé"] },
+      { "text": "Cuisiner", "aliases": ["préparer à manger", "faire à manger"] },
+      { "text": "Lire", "aliases": ["lire un livre"] }
+    ]
+  },
+  {
+    "sourceId": "train_q965",
+    "question": "Quel adulte un enfant connaît-il souvent par son prénom, en dehors de sa famille ?",
+    "answers": [
+      { "text": "Un professeur", "aliases": ["maître", "maîtresse", "enseignant"] },
+      { "text": "Une personne qui le garde", "aliases": ["baby-sitter", "nounou"] },
+      { "text": "Un voisin", "aliases": ["voisine"] },
+      { "text": "Une célébrité", "aliases": ["star", "personne connue"] },
+      { "text": "Un médecin", "aliases": ["docteur"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3460",
+    "question": "Pour quel achat important un adulte peut-il mettre de l'argent de côté ?",
+    "answers": [
+      { "text": "Une voiture", "aliases": ["voiture"] },
+      { "text": "Une maison", "aliases": ["appartement", "logement"] },
+      { "text": "Des vacances", "aliases": ["un voyage"] },
+      { "text": "Pour avoir des enfants", "aliases": ["fonder une famille"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1565",
+    "question": "Que peut reprocher un collègue à son manque de café le matin ?",
+    "answers": [
+      { "text": "Être de mauvaise humeur", "aliases": ["grincheux", "grognon"] },
+      { "text": "Être fatigué", "aliases": ["fatigue"] },
+      { "text": "Être en retard", "aliases": ["retard"] },
+      { "text": "Manquer de rapidité", "aliases": ["être lent", "lenteur"] }
+    ]
+  },
+  {
+    "sourceId": "train_q6566",
+    "question": "Avec quoi peut-on surprendre agréablement son ou sa partenaire ?",
+    "answers": [
+      { "text": "Des fleurs", "aliases": ["bouquet"] },
+      { "text": "Un bijou", "aliases": ["bijoux"] },
+      { "text": "Un dîner", "aliases": ["restaurant", "repas spécial"] },
+      { "text": "Un voyage", "aliases": ["des vacances"] },
+      { "text": "Une voiture", "aliases": ["voiture"] },
+      { "text": "Un cadeau", "aliases": ["cadeaux"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1054",
+    "question": "Quel animal peut être décrit comme majestueux ?",
+    "answers": [
+      { "text": "Un lion", "aliases": ["lionne"] },
+      { "text": "Un cheval", "aliases": ["chevaux"] },
+      { "text": "Un aigle", "aliases": ["rapace"] },
+      { "text": "Un tigre", "aliases": ["tigresse"] },
+      { "text": "Une licorne", "aliases": ["licorne"] }
+    ]
+  },
+  {
+    "sourceId": "train_q852",
+    "question": "Quel animal est souvent le plus bruyant dans un zoo ?",
+    "answers": [
+      { "text": "Le lion", "aliases": ["lionne"] },
+      { "text": "L'éléphant", "aliases": ["éléphants"] },
+      { "text": "Le singe", "aliases": ["singe", "les singes"] },
+      { "text": "Le tigre", "aliases": ["tigresse"] }
+    ]
+  },
+  {
+    "sourceId": "train_q590",
+    "question": "Contre quoi les chats aiment-ils se frotter ?",
+    "answers": [
+      { "text": "Les gens", "aliases": ["personnes", "jambes"] },
+      { "text": "Les meubles", "aliases": ["canapé", "meuble"] },
+      { "text": "Un griffoir", "aliases": ["arbre à chat"] },
+      { "text": "Un mur", "aliases": ["murs"] },
+      { "text": "De l'herbe à chat", "aliases": ["cataire"] }
+    ]
+  },
+  {
+    "sourceId": "train_q596",
+    "question": "Avec quoi est-il dangereux de laisser un enfant jouer ?",
+    "answers": [
+      { "text": "Des couteaux", "aliases": ["couteau"] },
+      { "text": "Des allumettes", "aliases": ["allumette"] },
+      { "text": "Du feu", "aliases": ["flammes"] },
+      { "text": "Une arme à feu", "aliases": ["pistolet", "arme"] },
+      { "text": "Des ciseaux", "aliases": ["ciseau"] },
+      { "text": "Une prise électrique", "aliases": ["prise de courant", "électricité"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2582",
+    "question": "Qu'est-ce qu'un oiseau a ?",
+    "answers": [
+      { "text": "Des ailes", "aliases": ["aile"] },
+      { "text": "Un bec", "aliases": ["bec"] },
+      { "text": "Des plumes", "aliases": ["plume"] },
+      { "text": "Des serres", "aliases": ["griffes"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2547",
+    "question": "Cite un animal qu'on peut trouver dans une ferme.",
+    "answers": [
+      { "text": "Une vache", "aliases": ["vache"] },
+      { "text": "Un cochon", "aliases": ["porc"] },
+      { "text": "Un canard", "aliases": ["canard"] },
+      { "text": "Une poule", "aliases": ["poulet", "coq"] }
+    ]
+  },
+  {
+    "sourceId": "train_q6908",
+    "question": "Quel animal peut ravager les cultures d'un agriculteur ?",
+    "answers": [
+      { "text": "Un lapin", "aliases": ["lapins"] },
+      { "text": "Un corbeau", "aliases": ["corbeaux"] },
+      { "text": "Un cerf", "aliases": ["biche", "chevreuil"] },
+      { "text": "Une marmotte", "aliases": ["rongeur"] },
+      { "text": "Un sanglier", "aliases": ["cochon sauvage"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2475",
+    "question": "Que fait-on pour se détendre quand on est stressé ?",
+    "answers": [
+      { "text": "Prendre un bain", "aliases": ["bain chaud"] },
+      { "text": "Lire", "aliases": ["lire un livre"] },
+      { "text": "Dormir", "aliases": ["faire une sieste", "se reposer"] },
+      { "text": "Boire un verre", "aliases": ["boire", "prendre un verre"] },
+      { "text": "Regarder la télévision", "aliases": ["regarder la télé", "un film"] }
+    ]
+  },
+  {
+    "sourceId": "train_q6369",
+    "question": "Qu'est-ce qu'on garde dans sa voiture en cas d'urgence ?",
+    "answers": [
+      { "text": "Une lampe torche", "aliases": ["lampe de poche", "torche"] },
+      { "text": "Des câbles de démarrage", "aliases": ["câbles pour batterie", "pinces de batterie"] },
+      { "text": "Une couverture", "aliases": ["couvertures"] },
+      { "text": "Une trousse de premiers secours", "aliases": ["trousse de secours", "pharmacie"] },
+      { "text": "Un téléphone portable", "aliases": ["téléphone", "portable"] },
+      { "text": "Une roue de secours", "aliases": ["pneu de secours", "roue de rechange"] }
+    ]
+  },
+  {
+    "sourceId": "train_q346",
+    "question": "Qu'est-ce qu'on garde souvent près de son fauteuil préféré ?",
+    "answers": [
+      { "text": "La télécommande", "aliases": ["télécommande"] },
+      { "text": "Des magazines", "aliases": ["revues"] },
+      { "text": "Le téléphone", "aliases": ["portable"] },
+      { "text": "Le journal", "aliases": ["quotidien"] },
+      { "text": "Des livres", "aliases": ["livre"] },
+      { "text": "Une boisson", "aliases": ["verre d'eau", "tasse"] }
+    ]
+  },
+  {
+    "sourceId": "train_q941",
+    "question": "Quel aliment peut-on manger au bout d'un bâtonnet ou d'une brochette ?",
+    "answers": [
+      { "text": "Une saucisse panée", "aliases": ["saucisse en pâte"] },
+      { "text": "Une glace à l'eau", "aliases": ["bâtonnet glacé", "glace en bâtonnet"] },
+      { "text": "Du poulet", "aliases": ["brochette de poulet"] },
+      { "text": "Un kebab", "aliases": ["brochette de viande"] },
+      { "text": "Une pomme d'amour", "aliases": ["pomme caramélisée"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2051",
+    "question": "Quel plat les enfants aimeraient-ils avoir entièrement pour eux, même s'ils ne peuvent pas tout finir ?",
+    "answers": [
+      { "text": "Une pizza", "aliases": ["pizza entière"] },
+      { "text": "Un hamburger", "aliases": ["burger"] },
+      { "text": "Un steak", "aliases": ["steak-frites"] },
+      { "text": "Une glace", "aliases": ["glace entière"] },
+      { "text": "Un hot-dog", "aliases": ["saucisse dans un pain"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3730",
+    "question": "Quelle boisson évite-t-on souvent quand il fait très chaud ?",
+    "answers": [
+      { "text": "Du café", "aliases": ["café chaud"] },
+      { "text": "Du chocolat chaud", "aliases": ["chocolat"] },
+      { "text": "Du thé", "aliases": ["thé chaud"] },
+      { "text": "Du lait", "aliases": ["lait chaud"] }
+    ]
+  },
+  {
+    "sourceId": "train_q4389",
+    "question": "Quelle boisson sert-on souvent avec des glaçons ?",
+    "answers": [
+      { "text": "Du thé", "aliases": ["thé glacé"] },
+      { "text": "Un soda", "aliases": ["boisson gazeuse", "limonade"] },
+      { "text": "Un alcool", "aliases": ["cocktail", "boisson alcoolisée"] },
+      { "text": "De l'eau", "aliases": ["eau fraîche"] },
+      { "text": "Du jus", "aliases": ["jus de fruits"] }
+    ]
+  },
+  {
+    "sourceId": "train_q902",
+    "question": "Quel repas presque tout le monde sait-il préparer ?",
+    "answers": [
+      { "text": "Des pâtes", "aliases": ["pâtes à la sauce", "spaghettis"] },
+      { "text": "Des œufs", "aliases": ["œuf au plat", "omelette"] },
+      { "text": "Un hot-dog", "aliases": ["saucisse dans un pain"] },
+      { "text": "Un hamburger", "aliases": ["burger"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2147",
+    "question": "Quel petit fruit peut-on mettre entier dans la bouche ?",
+    "answers": [
+      { "text": "Du raisin", "aliases": ["grains de raisin"] },
+      { "text": "Une fraise", "aliases": ["fraises"] },
+      { "text": "Une cerise", "aliases": ["cerises"] },
+      { "text": "Une myrtille", "aliases": ["myrtilles"] },
+      { "text": "Une petite prune", "aliases": ["prune"] }
+    ]
+  },
+  {
+    "sourceId": "train_q5262",
+    "question": "Quel fruit les pirates pouvaient-ils emporter pour éviter le scorbut ?",
+    "answers": [
+      { "text": "Une orange", "aliases": ["oranges"] },
+      { "text": "Une pomme", "aliases": ["pommes"] },
+      { "text": "Un ananas", "aliases": ["ananas"] },
+      { "text": "Un citron", "aliases": ["citrons"] },
+      { "text": "Du raisin", "aliases": ["raisins"] }
+    ]
+  },
+  {
+    "sourceId": "train_q9552",
+    "question": "Quel légume les enfants rechignent-ils souvent à manger ?",
+    "answers": [
+      { "text": "Du brocoli", "aliases": ["brocolis"] },
+      { "text": "Des choux de Bruxelles", "aliases": ["chou de Bruxelles"] },
+      { "text": "Des petits pois", "aliases": ["pois"] },
+      { "text": "Des épinards", "aliases": ["épinard"] },
+      { "text": "Des carottes", "aliases": ["carotte"] },
+      { "text": "Des haricots verts", "aliases": ["haricot vert"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3224",
+    "question": "Quel légume dégage une odeur reconnaissable pendant la cuisson ?",
+    "answers": [
+      { "text": "L'oignon", "aliases": ["oignons"] },
+      { "text": "Le chou", "aliases": ["choux"] },
+      { "text": "Le brocoli", "aliases": ["brocolis"] },
+      { "text": "L'ail", "aliases": ["gousses d'ail"] },
+      { "text": "L'asperge", "aliases": ["asperges"] },
+      { "text": "Le maïs", "aliases": ["épi de maïs"] }
+    ]
+  },
+  {
+    "sourceId": "train_q8031",
+    "question": "Que promet-on parfois aux enfants s'ils finissent leurs légumes ?",
+    "answers": [
+      { "text": "De devenir forts", "aliases": ["grandir fort", "être fort"] },
+      { "text": "Un dessert", "aliases": ["avoir un dessert"] },
+      { "text": "D'être en bonne santé", "aliases": ["être en forme"] },
+      { "text": "De mieux voir", "aliases": ["une meilleure vue"] },
+      { "text": "D'avoir une moustache", "aliases": ["du poil sur le torse"] }
+    ]
+  },
+  {
+    "sourceId": "train_q270",
+    "question": "Quel plat au fromage rappelle souvent l'enfance ?",
+    "answers": [
+      { "text": "La pizza", "aliases": ["pizza au fromage"] },
+      { "text": "Le croque-monsieur", "aliases": ["sandwich au fromage grillé"] },
+      { "text": "Les macaronis au fromage", "aliases": ["mac and cheese", "pâtes au fromage"] },
+      { "text": "Le cheeseburger", "aliases": ["hamburger au fromage"] }
+    ]
+  },
+  {
+    "sourceId": "dev-scraped_q2043",
+    "question": "Que peut-on manger au petit-déjeuner ?",
+    "answers": [
+      { "text": "Des œufs", "aliases": ["œuf"] },
+      { "text": "Des céréales", "aliases": ["céréales du petit-déjeuner"] },
+      { "text": "Des tartines", "aliases": ["pain grillé", "toast"] },
+      { "text": "Des crêpes", "aliases": ["pancakes"] },
+      { "text": "Du bacon", "aliases": ["tranches de bacon"] }
+    ]
+  },
+  {
+    "sourceId": "train_q5441",
+    "question": "Qu'est-ce qu'on détesterait trouver dans son assiette au restaurant ?",
+    "answers": [
+      { "text": "Un cheveu", "aliases": ["des cheveux", "poil dans l'assiette"] },
+      { "text": "Un cafard", "aliases": ["blatte"] },
+      { "text": "Des fourmis", "aliases": ["une fourmi"] },
+      { "text": "Une souris", "aliases": ["des souris"] },
+      { "text": "De la saleté", "aliases": ["assiette sale"] }
+    ]
+  },
+  {
+    "sourceId": "train_q5562",
+    "question": "Quel goûter les enfants prennent-ils souvent après l'école ?",
+    "answers": [
+      { "text": "Des biscuits", "aliases": ["gâteaux secs", "cookies"] },
+      { "text": "Un fruit", "aliases": ["fruits"] },
+      { "text": "Des chips", "aliases": ["chips salées"] },
+      { "text": "Une part de pizza", "aliases": ["pizza"] },
+      { "text": "Un sandwich", "aliases": ["sandwichs"] }
+    ]
+  },
+  {
+    "sourceId": "train_q6757",
+    "question": "Quel plat un étudiant sait-il souvent préparer ?",
+    "answers": [
+      { "text": "Des œufs", "aliases": ["omelette"] },
+      { "text": "Des macaronis au fromage", "aliases": ["mac and cheese", "pâtes au fromage"] },
+      { "text": "Des nouilles instantanées", "aliases": ["ramen", "nouilles en sachet"] },
+      { "text": "Un hot-dog", "aliases": ["saucisse dans un pain"] },
+      { "text": "Un croque-monsieur", "aliases": ["sandwich au fromage grillé"] }
+    ]
+  },
+  {
+    "sourceId": "train_q7716",
+    "question": "Au barbecue, quel condiment ou accessoire peut-on demander à quelqu'un de passer ?",
+    "answers": [
+      { "text": "Le ketchup", "aliases": ["sauce ketchup"] },
+      { "text": "La salade de pommes de terre", "aliases": ["salade de patates"] },
+      { "text": "Le sel", "aliases": ["salière"] },
+      { "text": "Des serviettes", "aliases": ["serviettes en papier"] },
+      { "text": "La moutarde", "aliases": ["sauce moutarde"] },
+      { "text": "Des assiettes", "aliases": ["assiette"] }
+    ]
+  },
+  {
+    "sourceId": "train_q8121",
+    "question": "Qu'est-ce qu'on peut demander à boire ou à manger lors d'un barbecue ?",
+    "answers": [
+      { "text": "Une bière", "aliases": ["bière fraîche"] },
+      { "text": "Une serviette", "aliases": ["serviette en papier"] },
+      { "text": "Un soda", "aliases": ["boisson gazeuse"] },
+      { "text": "Un hamburger", "aliases": ["burger"] },
+      { "text": "Un hot-dog", "aliases": ["saucisse dans un pain"] },
+      { "text": "Du ketchup", "aliases": ["sauce ketchup"] }
+    ]
+  },
+  {
+    "sourceId": "train_q9688",
+    "question": "Quel aliment peut-on faire cuire au four ?",
+    "answers": [
+      { "text": "Un gâteau", "aliases": ["gâteaux"] },
+      { "text": "Des biscuits", "aliases": ["cookies", "petits gâteaux"] },
+      { "text": "Une tarte", "aliases": ["tarte sucrée"] },
+      { "text": "Un brownie", "aliases": ["brownies"] },
+      { "text": "Du pain", "aliases": ["pain maison"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1566",
+    "question": "Quel plat se cuit au four mais pas au micro-ondes ?",
+    "answers": [
+      { "text": "Un gâteau", "aliases": ["gâteaux"] },
+      { "text": "Du poulet", "aliases": ["volaille"] },
+      { "text": "Du pain", "aliases": ["pain frais"] },
+      { "text": "Des biscuits", "aliases": ["cookies", "petits gâteaux"] },
+      { "text": "Une tarte", "aliases": ["tarte"] },
+      { "text": "Un rôti", "aliases": ["viande rôtie"] }
+    ]
+  },
+  {
+    "sourceId": "train_q454",
+    "question": "Quelle gourmandise achète-t-on en boulangerie pour les fêtes de fin d'année ?",
+    "answers": [
+      { "text": "Des sablés", "aliases": ["biscuits de Noël", "petits biscuits"] },
+      { "text": "Un gâteau", "aliases": ["gâteau de fête"] },
+      { "text": "Une tarte", "aliases": ["tarte sucrée"] },
+      { "text": "Un gâteau aux fruits", "aliases": ["cake aux fruits"] },
+      { "text": "Du pain", "aliases": ["pain de fête"] },
+      { "text": "Des petits pains", "aliases": ["pains individuels"] }
+    ]
+  },
+  {
+    "sourceId": "train_q4831",
+    "question": "Qu'est-ce qu'on installe ou plante parfois dans son jardin, devant la maison ?",
+    "answers": [
+      { "text": "Des fleurs", "aliases": ["fleur"] },
+      { "text": "Des arbres", "aliases": ["arbre"] },
+      { "text": "Un bain pour oiseaux", "aliases": ["abreuvoir à oiseaux"] },
+      { "text": "Des nains de jardin", "aliases": ["figurines de jardin"] },
+      { "text": "Des décorations de jardin", "aliases": ["ornements de jardin"] },
+      { "text": "Un mât avec un drapeau", "aliases": ["mât de drapeau"] }
+    ]
+  },
+  {
+    "sourceId": "train_q6544",
+    "question": "Quelle corvée de jardinage déteste-t-on faire ?",
+    "answers": [
+      { "text": "Tondre la pelouse", "aliases": ["tondre le gazon"] },
+      { "text": "Ratisser les feuilles", "aliases": ["ramasser les feuilles mortes"] },
+      { "text": "Arracher les mauvaises herbes", "aliases": ["désherber"] },
+      { "text": "Déneiger", "aliases": ["enlever la neige"] }
+    ]
+  },
+  {
+    "sourceId": "train_q9784",
+    "question": "Que fait-on cuire sur un barbecue dans le jardin ?",
+    "answers": [
+      { "text": "Des hamburgers", "aliases": ["burgers"] },
+      { "text": "Un steak", "aliases": ["steaks"] },
+      { "text": "Des saucisses", "aliases": ["chipolatas", "merguez"] },
+      { "text": "Du poulet", "aliases": ["brochettes de poulet"] },
+      { "text": "Des travers de porc", "aliases": ["ribs"] },
+      { "text": "Des côtelettes de porc", "aliases": ["côte de porc"] }
+    ]
+  },
+  {
+    "sourceId": "train_q7657",
+    "question": "Qu'est-ce qu'on met ou prépare souvent le matin avant de commencer sa journée ?",
+    "answers": [
+      { "text": "Ses vêtements", "aliases": ["s'habiller", "une tenue"] },
+      { "text": "Du maquillage", "aliases": ["se maquiller"] },
+      { "text": "Du déodorant", "aliases": ["déodorant"] },
+      { "text": "Du café", "aliases": ["cafetière", "préparer le café"] }
+    ]
+  },
+  {
+    "sourceId": "train_q9424",
+    "question": "Qu'est-ce qu'on peut oublier d'éteindre avant de se coucher ?",
+    "answers": [
+      { "text": "La télévision", "aliases": ["la télé", "un écran"] },
+      { "text": "Les lumières", "aliases": ["une lampe", "la lumière"] },
+      { "text": "Le four", "aliases": ["four allumé"] },
+      { "text": "L'ordinateur", "aliases": ["ordinateur"] },
+      { "text": "Ses lentilles", "aliases": ["lentilles de contact"] }
+    ]
+  },
+  {
+    "sourceId": "train_q5641",
+    "question": "À part le pied, quelle partie du corps peut s'engourdir ?",
+    "answers": [
+      { "text": "La main", "aliases": ["les mains"] },
+      { "text": "Le bras", "aliases": ["les bras"] },
+      { "text": "La jambe", "aliases": ["les jambes"] },
+      { "text": "Les fesses", "aliases": ["le derrière"] }
+    ]
+  },
+  {
+    "sourceId": "train_q6517",
+    "question": "Que peut-on faire quand on n'arrive pas à dormir ?",
+    "answers": [
+      { "text": "Lire", "aliases": ["lire un livre"] },
+      { "text": "Regarder la télévision", "aliases": ["regarder la télé", "regarder un film"] },
+      { "text": "Compter les moutons", "aliases": ["compter des moutons"] },
+      { "text": "Manger", "aliases": ["grignoter"] },
+      { "text": "Boire du lait", "aliases": ["lait chaud"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1136",
+    "question": "Pourquoi peut-on fermer les yeux ?",
+    "answers": [
+      { "text": "Pour dormir", "aliases": ["s'endormir"] },
+      { "text": "Parce qu'on a peur", "aliases": ["être effrayé"] },
+      { "text": "À cause d'une lumière trop vive", "aliases": ["lumière éblouissante"] },
+      { "text": "Pour embrasser quelqu'un", "aliases": ["faire un baiser"] },
+      { "text": "Pour éternuer", "aliases": ["éternuement"] },
+      { "text": "Pour prier", "aliases": ["faire une prière"] }
+    ]
+  },
+  {
+    "sourceId": "train_q5359",
+    "question": "À quelle occasion félicite-t-on quelqu'un ?",
+    "answers": [
+      { "text": "À son mariage", "aliases": ["mariage"] },
+      { "text": "À l'obtention d'un diplôme", "aliases": ["réussite aux examens", "diplôme"] },
+      { "text": "À la naissance de son enfant", "aliases": ["naissance"] },
+      { "text": "Pour une promotion", "aliases": ["promotion professionnelle"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3168",
+    "question": "Que peut-on faire pour garder la maison fraîche quand il fait chaud ?",
+    "answers": [
+      { "text": "Mettre la climatisation", "aliases": ["allumer la clim", "climatiseur"] },
+      { "text": "Allumer un ventilateur", "aliases": ["ventilateur"] },
+      { "text": "Fermer les volets", "aliases": ["baisser les stores", "fermer les rideaux"] },
+      { "text": "Ouvrir les fenêtres", "aliases": ["aérer"] }
+    ]
+  },
+  {
+    "sourceId": "train_q670",
+    "question": "Que font les gens pour se détendre ?",
+    "answers": [
+      { "text": "Lire", "aliases": ["lire un livre"] },
+      { "text": "Prendre un bain", "aliases": ["se baigner"] },
+      { "text": "Regarder la télévision", "aliases": ["regarder la télé"] },
+      { "text": "Dormir", "aliases": ["faire une sieste"] },
+      { "text": "Écouter de la musique", "aliases": ["musique"] },
+      { "text": "Aller au spa", "aliases": ["soin au spa"] }
+    ]
+  },
+  {
+    "sourceId": "train_q9467",
+    "question": "Quel métier est souvent considéré comme très stressant ?",
+    "answers": [
+      { "text": "Médecin", "aliases": ["docteur"] },
+      { "text": "Avocat", "aliases": ["avocate"] },
+      { "text": "Enseignant", "aliases": ["professeur", "prof"] },
+      { "text": "Policier", "aliases": ["policière", "gendarmes"] },
+      { "text": "Infirmier", "aliases": ["infirmière"] },
+      { "text": "Conseiller clientèle", "aliases": ["service client", "téléconseiller"] }
+    ]
+  },
+  {
+    "sourceId": "train_q4099",
+    "question": "Quel moyen de transport éviterait-on de prendre sous une forte pluie ?",
+    "answers": [
+      { "text": "Une moto", "aliases": ["moto"] },
+      { "text": "Un vélo", "aliases": ["bicyclette"] },
+      { "text": "Un avion", "aliases": ["avion de ligne"] },
+      { "text": "Un bateau", "aliases": ["voilier"] },
+      { "text": "La marche", "aliases": ["marcher", "à pied"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3456",
+    "question": "Quel produit un hôtel offre-t-il parfois gratuitement à ses clients ?",
+    "answers": [
+      { "text": "Du shampoing", "aliases": ["shampooing"] },
+      { "text": "Du savon", "aliases": ["savonnette"] },
+      { "text": "Le petit-déjeuner", "aliases": ["petit déjeuner", "buffet du matin"] },
+      { "text": "Des serviettes", "aliases": ["serviette de bain"] },
+      { "text": "Le Wi-Fi", "aliases": ["internet gratuit", "connexion internet"] },
+      { "text": "Du café", "aliases": ["café gratuit"] }
+    ]
+  },
+  {
+    "sourceId": "train_q627",
+    "question": "Qu'est-ce qu'un chien aime poursuivre ?",
+    "answers": [
+      { "text": "Un chat", "aliases": ["les chats"] },
+      { "text": "Une voiture", "aliases": ["les voitures"] },
+      { "text": "Sa queue", "aliases": ["la queue"] },
+      { "text": "Un ballon", "aliases": ["les balles", "une balle"] },
+      { "text": "Le facteur", "aliases": ["le livreur"] }
+    ]
+  },
+  {
+    "sourceId": "train_q636",
+    "question": "Quel ordre donne-t-on à un chien, et aimerait-on parfois donner à un adolescent ?",
+    "answers": [
+      { "text": "Assis !", "aliases": [] },
+      { "text": "Reste !", "aliases": ["ne bouge pas", "reste là"] },
+      { "text": "Viens ici !", "aliases": ["au pied", "viens"] },
+      { "text": "Rapporte !", "aliases": ["va chercher", "rapporte la balle"] },
+      { "text": "Parle !", "aliases": ["aboie"] },
+      { "text": "Silence !", "aliases": ["tais-toi", "calme-toi"] }
+    ]
+  },
+  {
+    "sourceId": "train_q9620",
+    "question": "Quel animal peut-on voir dans une forêt tropicale ?",
+    "answers": [
+      { "text": "Un singe", "aliases": ["des singes"] },
+      { "text": "Un serpent", "aliases": ["des serpents"] },
+      { "text": "Un perroquet", "aliases": ["des perroquets"] },
+      { "text": "Une grenouille", "aliases": ["des grenouilles"] },
+      { "text": "Un crocodile", "aliases": ["des crocodiles"] }
+    ]
+  },
+  {
+    "sourceId": "train_q4307",
+    "question": "Si vous deveniez un oiseau, qu'auriez-vous à apprendre à faire ?",
+    "answers": [
+      { "text": "Voler", "aliases": ["à voler"] },
+      { "text": "Construire un nid", "aliases": ["faire un nid"] },
+      { "text": "Manger des vers", "aliases": ["manger des lombrics"] },
+      { "text": "Chanter", "aliases": ["à chanter"] },
+      { "text": "Échapper aux chats", "aliases": ["éviter les chats"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2441",
+    "question": "Que peut-on trouver dans un aquarium ?",
+    "answers": [
+      { "text": "Des poissons", "aliases": ["poisson"] },
+      { "text": "Un château décoratif", "aliases": ["décor de château", "décoration"] },
+      { "text": "De la nourriture pour poissons", "aliases": ["nourriture à poissons", "granulés"] },
+      { "text": "Un filtre", "aliases": ["filtre d'aquarium"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1131",
+    "question": "Quel animal à fourrure ne ferait pas un bon animal de compagnie ?",
+    "answers": [
+      { "text": "Un ours", "aliases": ["ours"] },
+      { "text": "Une mouffette", "aliases": ["skunk", "putois"] },
+      { "text": "Un lion", "aliases": ["lionne"] },
+      { "text": "Un raton laveur", "aliases": ["ratons laveurs"] },
+      { "text": "Un rat", "aliases": ["rats"] },
+      { "text": "Un tigre", "aliases": ["tigresse"] }
+    ]
+  },
+  {
+    "sourceId": "train_q9415",
+    "question": "Quel animal voit-on souvent dans une ferme ?",
+    "answers": [
+      { "text": "Une vache", "aliases": ["vaches"] },
+      { "text": "Un cochon", "aliases": ["porc", "truie"] },
+      { "text": "Un canard", "aliases": ["canards"] },
+      { "text": "Une poule", "aliases": ["poules", "poulet"] }
+    ]
+  },
+  {
+    "sourceId": "train_q7374",
+    "question": "Quel travail agricole autrefois fait à la main est aujourd'hui souvent mécanisé ?",
+    "answers": [
+      { "text": "Labourer les champs", "aliases": ["labourer la terre"] },
+      { "text": "Semer les graines", "aliases": ["planter les semences"] },
+      { "text": "Traire les vaches", "aliases": ["traite des vaches"] },
+      { "text": "Récolter les cultures", "aliases": ["faire les récoltes", "moissonner"] },
+      { "text": "Arroser les cultures", "aliases": ["arroser les champs"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3958",
+    "question": "Quel animal peut-on voir dans un zoo ?",
+    "answers": [
+      { "text": "Un singe", "aliases": ["des singes"] },
+      { "text": "Un lion", "aliases": ["des lions"] },
+      { "text": "Un éléphant", "aliases": ["des éléphants"] },
+      { "text": "Un tigre", "aliases": ["des tigres"] },
+      { "text": "Un zèbre", "aliases": ["des zèbres"] },
+      { "text": "Une girafe", "aliases": ["des girafes"] }
+    ]
+  },
+  {
+    "sourceId": "train_q5367",
+    "question": "Quel animal peut-on nourrir dans une ferme pédagogique ?",
+    "answers": [
+      { "text": "Un agneau", "aliases": ["des agneaux", "mouton"] },
+      { "text": "Un cochon", "aliases": ["des cochons", "porc"] },
+      { "text": "Un chien", "aliases": ["des chiens"] },
+      { "text": "Un veau", "aliases": ["des veaux"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2584",
+    "question": "Quel insecte peut voler ?",
+    "answers": [
+      { "text": "Une mouche", "aliases": ["des mouches"] },
+      { "text": "Un moustique", "aliases": ["des moustiques"] },
+      { "text": "Un papillon", "aliases": ["des papillons"] },
+      { "text": "Une abeille", "aliases": ["des abeilles"] },
+      { "text": "Un papillon de nuit", "aliases": ["mite"] },
+      { "text": "Une sauterelle", "aliases": ["des sauterelles"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2146",
+    "question": "Quelle petite bête agaçante n'a-t-on pas envie de trouver chez soi ?",
+    "answers": [
+      { "text": "Un moustique", "aliases": ["des moustiques"] },
+      { "text": "Un cafard", "aliases": ["blatte", "des cafards"] },
+      { "text": "Une mouche", "aliases": ["des mouches"] },
+      { "text": "Une araignée", "aliases": ["des araignées"] },
+      { "text": "Une fourmi", "aliases": ["des fourmis"] },
+      { "text": "Une abeille", "aliases": ["des abeilles"] }
+    ]
+  },
+  {
+    "sourceId": "train_q4922",
+    "question": "Qu'achète-t-on souvent pour un chat ?",
+    "answers": [
+      { "text": "De l'herbe à chat", "aliases": ["cataire"] },
+      { "text": "Une litière", "aliases": ["bac à litière"] },
+      { "text": "Des croquettes", "aliases": ["nourriture pour chat", "pâtée"] },
+      { "text": "De la laine", "aliases": ["pelote de laine"] },
+      { "text": "Une balle", "aliases": ["balle pour chat"] }
+    ]
+  },
+  {
+    "sourceId": "train_q598",
+    "question": "Que veut refaire un enfant encore et encore lorsqu'il vient de l'apprendre ?",
+    "answers": [
+      { "text": "Faire du vélo", "aliases": ["rouler à vélo"] },
+      { "text": "Parler", "aliases": ["dire ses premiers mots"] },
+      { "text": "Marcher", "aliases": ["faire ses premiers pas"] },
+      { "text": "Nager", "aliases": ["aller dans l'eau"] },
+      { "text": "Lacer ses chaussures", "aliases": ["faire ses lacets"] },
+      { "text": "Lire", "aliases": ["lire un livre"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1121",
+    "question": "Qu'apprend-on dans un cours destiné aux nouveaux parents ?",
+    "answers": [
+      { "text": "Nourrir le bébé", "aliases": ["l'alimentation du bébé", "donner le biberon"] },
+      { "text": "Changer les couches", "aliases": ["changer une couche"] },
+      { "text": "Poser des limites", "aliases": ["éduquer l'enfant"] },
+      { "text": "Les gestes de premiers secours", "aliases": ["réanimation cardio-pulmonaire", "massage cardiaque"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1270",
+    "question": "Qu'est-ce qu'un enfant pourrait essayer de cacher à ses parents ?",
+    "answers": [
+      { "text": "Son bulletin scolaire", "aliases": ["bulletin de notes"] },
+      { "text": "De mauvaises notes", "aliases": ["mauvais résultats scolaires"] },
+      { "text": "Des bonbons", "aliases": ["sucreries"] },
+      { "text": "Un secret", "aliases": ["des secrets"] },
+      { "text": "De l'argent", "aliases": ["argent de poche"] }
+    ]
+  },
+  {
+    "sourceId": "train_q9321",
+    "question": "À quel jeu un professeur pourrait-il avoir envie de participer à la récréation ?",
+    "answers": [
+      { "text": "Le chat", "aliases": ["jeu du chat", "jeu du loup"] },
+      { "text": "Le ballon prisonnier", "aliases": ["balle au prisonnier"] },
+      { "text": "Les barres parallèles", "aliases": ["les barres de jeux"] },
+      { "text": "Les balançoires", "aliases": ["faire de la balançoire"] },
+      { "text": "La corde à sauter", "aliases": ["saut à la corde"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3797",
+    "question": "Quelle image pourrait illustrer un article sur les enseignants ?",
+    "answers": [
+      { "text": "Une pomme", "aliases": ["pommes"] },
+      { "text": "Des livres", "aliases": ["livre"] },
+      { "text": "Un tableau noir", "aliases": ["tableau à craie", "craie"] },
+      { "text": "Une salle de classe", "aliases": ["des bureaux d'école"] },
+      { "text": "Un globe terrestre", "aliases": ["carte du monde", "globe"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2988",
+    "question": "Quelle qualité est essentielle pour un professeur de lycée ?",
+    "answers": [
+      { "text": "La patience", "aliases": ["être patient"] },
+      { "text": "L'intelligence", "aliases": ["être intelligent"] },
+      { "text": "La gentillesse", "aliases": ["être sympathique", "avoir un bon caractère"] },
+      { "text": "La fermeté", "aliases": ["être strict"] }
+    ]
+  },
+  {
+    "sourceId": "train_q8848",
+    "question": "Pourquoi le professeur de votre enfant pourrait-il vous appeler ?",
+    "answers": [
+      { "text": "Votre enfant est malade", "aliases": ["il est malade", "elle est malade"] },
+      { "text": "Il s'est mal comporté", "aliases": ["mauvais comportement", "elle s'est mal comportée"] },
+      { "text": "Il a de mauvaises notes", "aliases": ["mauvais résultats", "elle a de mauvaises notes"] },
+      { "text": "Il s'est battu", "aliases": ["bagarre", "elle s'est battue"] },
+      { "text": "Il a séché les cours", "aliases": ["absentéisme", "elle a séché les cours"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2674",
+    "question": "Que peut-on faire pour se préparer à son premier jour d'école ?",
+    "answers": [
+      { "text": "Aller chez le coiffeur", "aliases": ["se faire couper les cheveux"] },
+      { "text": "Choisir sa tenue", "aliases": ["préparer ses vêtements"] },
+      { "text": "Préparer son sac", "aliases": ["faire son cartable"] },
+      { "text": "Bien dormir", "aliases": ["se coucher tôt"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3652",
+    "question": "Quel plat peut-on manger à la cantine d'un collège ?",
+    "answers": [
+      { "text": "Des nuggets de poulet", "aliases": ["nuggets"] },
+      { "text": "Des macaronis au fromage", "aliases": ["mac and cheese", "pâtes au fromage"] },
+      { "text": "Un hot-dog", "aliases": ["saucisse dans un pain"] },
+      { "text": "Une pizza", "aliases": ["part de pizza"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3519",
+    "question": "Quelle boisson sert-on à un goûter d'anniversaire pour enfants ?",
+    "answers": [
+      { "text": "Du sirop à l'eau", "aliases": ["sirop", "boisson au sirop"] },
+      { "text": "Du punch sans alcool", "aliases": ["cocktail de fruits", "punch aux fruits"] },
+      { "text": "Un soda", "aliases": ["boisson gazeuse"] },
+      { "text": "De la limonade", "aliases": ["limonade"] },
+      { "text": "Du lait", "aliases": ["verre de lait"] }
+    ]
+  },
+  {
+    "sourceId": "train_q6724",
+    "question": "Qu'est-ce qu'on détesterait voir arriver à son mariage ?",
+    "answers": [
+      { "text": "Des invités qui ne viennent pas", "aliases": ["des absents", "personne ne vient"] },
+      { "text": "Une dispute", "aliases": ["une bagarre"] },
+      { "text": "Tomber", "aliases": ["faire une chute", "glisser"] },
+      { "text": "La pluie", "aliases": ["un orage", "mauvais temps"] },
+      { "text": "Un refus devant l'autel", "aliases": ["dire non", "annuler le mariage"] },
+      { "text": "La présence d'un ex", "aliases": ["un ancien partenaire"] }
+    ]
+  },
+  {
+    "sourceId": "train_q7710",
+    "question": "Qu'est-ce qu'un couple doit choisir pour son mariage ?",
+    "answers": [
+      { "text": "Les alliances", "aliases": ["bagues de mariage"] },
+      { "text": "Le gâteau de mariage", "aliases": ["pièce montée"] },
+      { "text": "Le lieu de réception", "aliases": ["salle de mariage", "lieu de cérémonie"] },
+      { "text": "Les faire-part", "aliases": ["invitations de mariage"] },
+      { "text": "Les fleurs", "aliases": ["bouquet"] },
+      { "text": "Les couleurs", "aliases": ["thème de couleurs"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1425",
+    "question": "Que font les parents pour prendre soin d'un enfant malade ?",
+    "answers": [
+      { "text": "Lui donner un médicament", "aliases": ["médicaments", "le soigner"] },
+      { "text": "Lui préparer une soupe", "aliases": ["faire de la soupe"] },
+      { "text": "L'emmener chez le médecin", "aliases": ["aller chez le docteur"] },
+      { "text": "Prendre sa température", "aliases": ["vérifier la fièvre"] },
+      { "text": "Le câliner", "aliases": ["faire un câlin"] }
+    ]
+  },
+  {
+    "sourceId": "train_q759",
+    "question": "Quel liquide met-on dans une voiture ?",
+    "answers": [
+      { "text": "De l'essence", "aliases": ["carburant"] },
+      { "text": "De l'huile moteur", "aliases": ["huile de moteur"] },
+      { "text": "Du liquide de refroidissement", "aliases": ["antigel"] },
+      { "text": "De l'eau", "aliases": ["eau du lave-glace"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1028",
+    "question": "Que peut-on voir dans une fête foraine ?",
+    "answers": [
+      { "text": "Une grande roue", "aliases": ["grande roue"] },
+      { "text": "Des manèges", "aliases": ["attractions"] },
+      { "text": "Des clowns", "aliases": ["un clown"] },
+      { "text": "Des éléphants", "aliases": ["un éléphant"] },
+      { "text": "Des enfants", "aliases": ["des familles"] }
+    ]
+  },
+  {
+    "sourceId": "train_q4234",
+    "question": "Si votre voiture est au garage, où pourriez-vous demander à un voisin de vous conduire ?",
+    "answers": [
+      { "text": "Au magasin", "aliases": ["faire des courses", "au supermarché"] },
+      { "text": "Au travail", "aliases": ["au bureau"] },
+      { "text": "Chez le médecin", "aliases": ["à un rendez-vous médical"] },
+      { "text": "Au garage", "aliases": ["récupérer la voiture"] },
+      { "text": "À l'arrêt de bus", "aliases": ["à la gare routière"] },
+      { "text": "À la maison", "aliases": ["chez moi", "rentrer chez soi"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2491",
+    "question": "Que peut-on faire pour passer le temps pendant un voyage ?",
+    "answers": [
+      { "text": "Lire", "aliases": ["lire un livre"] },
+      { "text": "Dormir", "aliases": ["faire une sieste"] },
+      { "text": "Écouter de la musique", "aliases": ["musique"] },
+      { "text": "Jouer", "aliases": ["jouer à des jeux"] },
+      { "text": "Chanter", "aliases": ["chanter en voiture"] }
+    ]
+  },
+  {
+    "sourceId": "train_q7696",
+    "question": "Qu'est-ce qu'on emporte toujours en vacances ?",
+    "answers": [
+      { "text": "Des vêtements", "aliases": ["habits", "affaires"] },
+      { "text": "Un maillot de bain", "aliases": ["maillot"] },
+      { "text": "Une brosse à dents", "aliases": ["brosse à dents et dentifrice"] },
+      { "text": "Un appareil photo", "aliases": ["caméra"] }
+    ]
+  },
+  {
+    "sourceId": "train_q7738",
+    "question": "Qu'est-ce qui pourrait gâcher de belles vacances ?",
+    "answers": [
+      { "text": "Le mauvais temps", "aliases": ["pluie", "météo défavorable"] },
+      { "text": "Une dispute", "aliases": ["une querelle"] },
+      { "text": "Une maladie", "aliases": ["tomber malade"] },
+      { "text": "Un vol", "aliases": ["se faire voler", "un cambriolage"] }
+    ]
+  },
+  {
+    "sourceId": "train_q6611",
+    "question": "Qu'apprend-on sur un vol en consultant les écrans d'un aéroport ?",
+    "answers": [
+      { "text": "L'heure d'arrivée", "aliases": ["heure d'atterrissage"] },
+      { "text": "S'il est retardé", "aliases": ["le retard", "vol retardé"] },
+      { "text": "L'heure de départ", "aliases": ["horaire de départ"] },
+      { "text": "Le numéro du vol", "aliases": ["numéro de vol"] },
+      { "text": "La porte d'embarquement", "aliases": ["porte d'embarquement"] }
+    ]
+  },
+  {
+    "sourceId": "train_q7864",
+    "question": "Qu'emporte-t-on à l'aéroport ?",
+    "answers": [
+      { "text": "Des bagages", "aliases": ["valise", "valises"] },
+      { "text": "Un passeport", "aliases": ["papiers d'identité"] },
+      { "text": "Des billets", "aliases": ["billet d'avion", "carte d'embarquement"] },
+      { "text": "Un ordinateur portable", "aliases": ["ordinateur", "laptop"] },
+      { "text": "Un livre", "aliases": ["des livres"] }
+    ]
+  },
+  {
+    "sourceId": "train_q7479",
+    "question": "Quel service d'hôtel aimeriez-vous aussi avoir chez vous ?",
+    "answers": [
+      { "text": "Le service en chambre", "aliases": ["room service", "repas en chambre"] },
+      { "text": "Le ménage", "aliases": ["service de ménage", "faire le ménage"] },
+      { "text": "Un massage", "aliases": ["massages"] },
+      { "text": "La blanchisserie", "aliases": ["service de linge", "laverie"] },
+      { "text": "Le voiturier", "aliases": ["service de voiturier"] }
+    ]
+  },
+  {
+    "sourceId": "train_q742",
+    "question": "Que peut-on faire quand on est coincé dans les embouteillages ?",
+    "answers": [
+      { "text": "Écouter la radio", "aliases": ["radio"] },
+      { "text": "Chanter", "aliases": ["chanter dans la voiture"] },
+      { "text": "Téléphoner", "aliases": ["passer un appel"] },
+      { "text": "Envoyer un texto", "aliases": ["envoyer un SMS", "écrire un message"] },
+      { "text": "Lire", "aliases": ["lire un livre"] }
+    ]
+  },
+  {
+    "sourceId": "train_q9597",
+    "question": "Qu'est-ce qu'on ne voudrait surtout pas voir arriver dans un embouteillage ?",
+    "answers": [
+      { "text": "Avoir envie d'aller aux toilettes", "aliases": ["besoin urgent", "envie pressante"] },
+      { "text": "Tomber en panne d'essence", "aliases": ["plus d'essence"] },
+      { "text": "Tomber en panne", "aliases": ["panne de voiture"] },
+      { "text": "Avoir un accident", "aliases": ["collision"] },
+      { "text": "Crever un pneu", "aliases": ["pneu crevé"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1371",
+    "question": "En plein vol, que détesteriez-vous voir faire le pilote au lieu de piloter ?",
+    "answers": [
+      { "text": "Faire une sieste", "aliases": ["dormir", "s'endormir"] },
+      { "text": "Boire de l'alcool", "aliases": ["être ivre"] },
+      { "text": "Utiliser son téléphone", "aliases": ["regarder son portable"] },
+      { "text": "Lire", "aliases": ["lire un livre"] },
+      { "text": "Grignoter", "aliases": ["manger"] },
+      { "text": "Discuter dans la cabine", "aliases": ["parler avec l'équipage"] }
+    ]
+  },
+  {
+    "sourceId": "train_q3698",
+    "question": "Sur quoi pourrait-on marcher sur une plage ?",
+    "answers": [
+      { "text": "Des coquillages", "aliases": ["coquillage"] },
+      { "text": "Une méduse", "aliases": ["des méduses"] },
+      { "text": "Un crabe", "aliases": ["des crabes"] },
+      { "text": "Des cailloux", "aliases": ["pierres"] },
+      { "text": "Une serviette", "aliases": ["serviette de plage"] },
+      { "text": "Du verre cassé", "aliases": ["éclats de verre"] }
+    ]
+  },
+  {
+    "sourceId": "dev-scraped_q9803",
+    "question": "Qu'est-ce qu'il serait catastrophique d'oublier pour une sortie en camping ?",
+    "answers": [
+      { "text": "La tente", "aliases": ["tente de camping"] },
+      { "text": "Le sac de couchage", "aliases": ["sac de couchage"] },
+      { "text": "La nourriture", "aliases": ["à manger", "provisions"] },
+      { "text": "De l'eau", "aliases": ["eau potable"] },
+      { "text": "Des allumettes", "aliases": ["briquet", "de quoi faire du feu"] },
+      { "text": "Un répulsif anti-insectes", "aliases": ["anti-moustique", "spray anti-moustiques"] }
+    ]
+  },
+  {
+    "sourceId": "train_q7329",
+    "question": "Que fait-on habituellement à l'intérieur mais aussi en plein air en camping ?",
+    "answers": [
+      { "text": "Dormir", "aliases": ["faire une sieste"] },
+      { "text": "Cuisiner", "aliases": ["faire à manger"] },
+      { "text": "Manger", "aliases": ["prendre un repas"] },
+      { "text": "Aller aux toilettes", "aliases": ["utiliser les toilettes"] }
+    ]
+  },
+  {
+    "sourceId": "train_q4622",
+    "question": "Quelle partie du corps est souvent douloureuse après le sport ?",
+    "answers": [
+      { "text": "Les jambes", "aliases": ["les cuisses", "les mollets"] },
+      { "text": "Les bras", "aliases": ["les biceps"] },
+      { "text": "Le dos", "aliases": ["les lombaires"] },
+      { "text": "Le ventre", "aliases": ["les abdominaux"] },
+      { "text": "Les fesses", "aliases": ["le derrière"] }
+    ]
+  },
+  {
+    "sourceId": "train_q592",
+    "question": "Quelle entreprise fabrique des jeux vidéo ?",
+    "answers": [
+      { "text": "Nintendo", "aliases": [] },
+      { "text": "Sony", "aliases": ["PlayStation"] },
+      { "text": "Microsoft", "aliases": ["Xbox"] },
+      { "text": "Electronic Arts", "aliases": ["EA"] }
+    ]
+  },
+  {
+    "sourceId": "train_q595",
+    "question": "Quel jeu joue-t-on sur son téléphone portable ?",
+    "answers": [
+      { "text": "Candy Crush", "aliases": ["Candy Crush Saga"] },
+      { "text": "Une famille en or", "aliases": ["Family Feud", "jeu télévisé"] },
+      { "text": "Angry Birds", "aliases": ["les oiseaux en colère"] },
+      { "text": "Le solitaire", "aliases": ["jeu de cartes", "patience"] },
+      { "text": "Tetris", "aliases": ["jeu de briques"] }
+    ]
+  },
+  {
+    "sourceId": "train_q875",
+    "question": "Quelle console de jeux vidéo connaissez-vous ?",
+    "answers": [
+      { "text": "La Xbox", "aliases": ["Xbox"] },
+      { "text": "La PlayStation", "aliases": ["PS5", "PS4", "PS3"] },
+      { "text": "La Wii", "aliases": ["Nintendo Wii"] },
+      { "text": "La Sega Mega Drive", "aliases": ["Mega Drive", "Sega Genesis"] },
+      { "text": "L'Atari", "aliases": ["Atari"] }
+    ]
+  },
+  {
+    "sourceId": "train_q8015",
+    "question": "Avant le streaming, comment écoutait-on de la musique ?",
+    "answers": [
+      { "text": "À la radio", "aliases": ["radio"] },
+      { "text": "Avec un lecteur CD", "aliases": ["CD", "compact disc"] },
+      { "text": "Avec une cassette", "aliases": ["cassette audio", "walkman"] },
+      { "text": "Avec un disque vinyle", "aliases": ["vinyle", "tourne-disque"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2396",
+    "question": "Que font les gens pendant une séance de cinéma ?",
+    "answers": [
+      { "text": "Manger du pop-corn", "aliases": ["popcorn"] },
+      { "text": "Regarder le film", "aliases": ["voir un film"] },
+      { "text": "S'embrasser", "aliases": ["faire un baiser"] },
+      { "text": "Dormir", "aliases": ["s'endormir"] },
+      { "text": "Parler", "aliases": ["discuter"] },
+      { "text": "Rire", "aliases": ["rigoler"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1801",
+    "question": "Quel loisir dangereux ne voudriez-vous pas voir pratiquer par votre partenaire ?",
+    "answers": [
+      { "text": "Le parachutisme", "aliases": ["saut en parachute"] },
+      { "text": "La chasse", "aliases": ["chasser"] },
+      { "text": "Le pilotage d'avion", "aliases": ["piloter un avion"] },
+      { "text": "L'escalade", "aliases": ["grimper"] },
+      { "text": "La course automobile", "aliases": ["piloter une voiture de course"] },
+      { "text": "La moto", "aliases": ["faire de la moto"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2257",
+    "question": "Quel loisir commence-t-on parfois à la retraite ?",
+    "answers": [
+      { "text": "Le golf", "aliases": ["jouer au golf"] },
+      { "text": "La pêche", "aliases": ["pêcher"] },
+      { "text": "Voyager", "aliases": ["les voyages"] },
+      { "text": "Le tricot", "aliases": ["tricoter"] },
+      { "text": "Le jardinage", "aliases": ["jardiner"] }
+    ]
+  },
+  {
+    "sourceId": "train_q6524",
+    "question": "Quel loisir les gens pratiquent-ils souvent ?",
+    "answers": [
+      { "text": "La lecture", "aliases": ["lire"] },
+      { "text": "La philatélie", "aliases": ["collectionner les timbres"] },
+      { "text": "Le golf", "aliases": ["jouer au golf"] },
+      { "text": "Le jardinage", "aliases": ["jardiner"] },
+      { "text": "Le tricot", "aliases": ["tricoter"] }
+    ]
+  },
+  {
+    "sourceId": "train_q5458",
+    "question": "Qu'est-ce qui pourrait gâcher un dîner élégant ?",
+    "answers": [
+      { "text": "Une dispute", "aliases": ["une querelle"] },
+      { "text": "Trop d'alcool", "aliases": ["être ivre"] },
+      { "text": "Un plat brûlé", "aliases": ["repas brûlé"] },
+      { "text": "Des enfants turbulents", "aliases": ["enfants qui crient"] },
+      { "text": "Une coupure de courant", "aliases": ["panne d'électricité"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2790",
+    "question": "Que vous dirait votre téléphone s'il pouvait parler ?",
+    "answers": [
+      { "text": "Lâche-moi un peu", "aliases": ["arrête de me toucher", "pose-moi"] },
+      { "text": "Recharge-moi", "aliases": ["j'ai besoin de batterie", "branche-moi"] },
+      { "text": "Bonjour", "aliases": ["salut"] },
+      { "text": "Réponds-moi", "aliases": ["décroche"] },
+      { "text": "Arrête d'envoyer des messages", "aliases": ["arrête de texter"] },
+      { "text": "Tais-toi", "aliases": ["ferme-la"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2239",
+    "question": "Qu'est-ce qu'on trouve sur un ordinateur ?",
+    "answers": [
+      { "text": "Un clavier", "aliases": ["claviers"] },
+      { "text": "Un écran", "aliases": ["moniteur"] },
+      { "text": "Internet", "aliases": ["connexion internet"] },
+      { "text": "Des jeux vidéo", "aliases": ["jeux"] },
+      { "text": "Windows", "aliases": ["le système Windows"] }
+    ]
+  },
+  {
+    "sourceId": "train_q4549",
+    "question": "Quel appareil branche-t-on à un ordinateur ?",
+    "answers": [
+      { "text": "Une imprimante", "aliases": ["imprimantes"] },
+      { "text": "Une souris", "aliases": ["souris d'ordinateur"] },
+      { "text": "Un clavier", "aliases": ["claviers"] },
+      { "text": "Un téléphone", "aliases": ["smartphone", "portable"] },
+      { "text": "Un routeur", "aliases": ["box internet"] },
+      { "text": "Un écran", "aliases": ["moniteur"] }
+    ]
+  },
+  {
+    "sourceId": "train_q5515",
+    "question": "De quoi un ordinateur pourrait-il se passer, mais ce serait dommage ?",
+    "answers": [
+      { "text": "D'Internet", "aliases": ["connexion internet"] },
+      { "text": "De souris", "aliases": ["souris d'ordinateur"] },
+      { "text": "D'imprimante", "aliases": ["imprimante"] },
+      { "text": "De haut-parleurs", "aliases": ["enceintes", "baffles"] },
+      { "text": "De clavier", "aliases": ["clavier"] }
+    ]
+  },
+  {
+    "sourceId": "train_q8327",
+    "question": "Quelle activité nécessite une tenue adaptée ?",
+    "answers": [
+      { "text": "Le snowboard", "aliases": ["snowboard"] },
+      { "text": "La natation", "aliases": ["nager"] },
+      { "text": "La cuisine", "aliases": ["cuisiner"] },
+      { "text": "La randonnée", "aliases": ["marcher en montagne"] }
+    ]
+  },
+  {
+    "sourceId": "dev-scraped_q9523",
+    "question": "Qu'est-ce qui peut tacher un vêtement ?",
+    "answers": [
+      { "text": "Du vin", "aliases": ["vin rouge"] },
+      { "text": "Du café", "aliases": ["tache de café"] },
+      { "text": "Du ketchup", "aliases": ["sauce tomate"] },
+      { "text": "De la boue", "aliases": ["terre humide"] }
+    ]
+  },
+  {
+    "sourceId": "train_q8544",
+    "question": "Si vous ne pouviez emporter qu'un petit sac pour une nuit, quels essentiels prendriez-vous ?",
+    "answers": [
+      { "text": "Une brosse à dents et du dentifrice", "aliases": ["brosse à dents", "dentifrice"] },
+      { "text": "Des sous-vêtements", "aliases": ["culotte", "caleçon"] },
+      { "text": "Du maquillage", "aliases": ["trousse de maquillage"] },
+      { "text": "Du déodorant", "aliases": ["déodorant"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1699",
+    "question": "Qu'est-ce qu'on trouve parfois sous une chaussure ?",
+    "answers": [
+      { "text": "Du chewing-gum", "aliases": ["gomme à mâcher"] },
+      { "text": "La semelle", "aliases": ["semelle de la chaussure"] },
+      { "text": "Des peluches", "aliases": ["poussière", "saletés"] },
+      { "text": "Des fers", "aliases": ["fer de chaussure"] },
+      { "text": "Le talon", "aliases": ["talon de la chaussure"] },
+      { "text": "Des crottes de chien", "aliases": ["excréments de chien"] }
+    ]
+  },
+  {
+    "sourceId": "train_q661",
+    "question": "Quel objet trouve-t-on dans une boîte à outils ?",
+    "answers": [
+      { "text": "Un marteau", "aliases": ["marteaux"] },
+      { "text": "Un tournevis", "aliases": ["tournevis"] },
+      { "text": "Une clé", "aliases": ["clé à molette", "clé plate"] },
+      { "text": "Une pince", "aliases": ["pinces"] },
+      { "text": "Des clous", "aliases": ["clou"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2230",
+    "question": "Quel outil trouve-t-on souvent dans un garage ?",
+    "answers": [
+      { "text": "Un marteau", "aliases": ["marteaux"] },
+      { "text": "Une clé", "aliases": ["clé à molette", "clé plate"] },
+      { "text": "Un tournevis", "aliases": ["tournevis"] },
+      { "text": "Une tondeuse", "aliases": ["tondeuse à gazon"] },
+      { "text": "Un râteau", "aliases": ["râteaux"] },
+      { "text": "Une scie", "aliases": ["scies"] }
+    ]
+  },
+  {
+    "sourceId": "train_q31",
+    "question": "Pourquoi peut-on quitter sa ville natale ?",
+    "answers": [
+      { "text": "Pour changer de carrière", "aliases": ["nouveau travail", "mutation professionnelle"] },
+      { "text": "Pour faire des études", "aliases": ["aller à l'université", "étudier"] },
+      { "text": "À cause d'une rupture", "aliases": ["un ex", "séparation amoureuse"] },
+      { "text": "Pour rejoindre son partenaire", "aliases": ["suivre son conjoint", "amour"] }
+    ]
+  },
+  {
+    "sourceId": "train_q432",
+    "question": "Pourquoi une personne pourrait-elle avoir une voix étrange ?",
+    "answers": [
+      { "text": "Elle est malade", "aliases": ["un rhume", "mal de gorge"] },
+      { "text": "Elle a inhalé de l'hélium", "aliases": ["ballon d'hélium"] },
+      { "text": "Sa voix mue", "aliases": ["puberté", "voix qui change"] },
+      { "text": "Elle est ivre", "aliases": ["alcool"] },
+      { "text": "Elle a un accent", "aliases": ["accent étranger"] },
+      { "text": "Elle vient de se réveiller", "aliases": ["voix du matin"] }
+    ]
+  },
+  {
+    "sourceId": "train_q1055",
+    "question": "Pour quelle raison précise pourrait-on consulter une voyante ?",
+    "answers": [
+      { "text": "Sa vie amoureuse", "aliases": ["amour", "rencontre amoureuse"] },
+      { "text": "Sa carrière", "aliases": ["travail", "avenir professionnel"] },
+      { "text": "Les numéros du loto", "aliases": ["numéros gagnants", "loterie"] },
+      { "text": "Sa santé future", "aliases": ["avenir médical"] }
+    ]
+  },
+  {
+    "sourceId": "train_q2174",
+    "question": "Quelle excuse un enfant peut-il donner pour ne pas avoir fait ses devoirs ?",
+    "answers": [
+      { "text": "Le chien a mangé le devoir", "aliases": ["mon chien a mangé mon devoir"] },
+      { "text": "Il a oublié", "aliases": ["oubli", "j'ai oublié"] },
+      { "text": "Il était malade", "aliases": ["maladie", "je suis malade"] },
+      { "text": "Il était fatigué", "aliases": ["fatigue", "j'étais fatigué"] },
+      { "text": "Il l'a laissé à l'école", "aliases": ["devoir oublié en classe"] }
+    ]
+  },
+  {
+    "sourceId": "train_q7859",
+    "question": "Quelle excuse donne-t-on souvent pour ne pas aller à la salle de sport ?",
+    "answers": [
+      { "text": "Être fatigué", "aliases": ["fatigue", "je suis fatigué"] },
+      { "text": "Manquer de temps", "aliases": ["être trop occupé", "pas le temps"] },
+      { "text": "Avoir trop de travail", "aliases": ["travail", "boulot"] },
+      { "text": "Être malade", "aliases": ["maladie", "je suis malade"] }
+    ]
+  }
+]

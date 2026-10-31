@@ -38,6 +38,7 @@ La compilation génère le hub et le jeu dans `dist/`, prêts à être hébergé
 - [`imposteur/`](./imposteur/README.md) — **À couvert, le jeu de l'imposteur** : un jeu de bluff en français, de 3 à 12 joueurs, quelques minutes par manche.
 - [`loup-garou/`](./loup-garou/README.md) — **Le Loup-Garou** : rôles secrets, actions nocturnes, pouvoirs et votes, de 4 à 12 joueurs.
 - [`tu_preferes/`](./tu_preferes/README.md) — **Tu préfères** : des dilemmes soft ou hot (18+) à débattre, sans score ni fin de partie.
+- [`FamilleEnOr/`](./FamilleEnOr/README.md) — **Famille en Or** : réponses à crier, deux équipes et cinq manches sur un seul écran.
 
 ## Tester et vérifier
 
@@ -45,6 +46,7 @@ La compilation génère le hub et le jeu dans `dist/`, prêts à être hébergé
 npm test
 npm run seed:check:imposteur
 npm run seed:check:tu-preferes
+npm run seed:check:famille-en-or
 ```
 
 `npm test` lance tous les tests de la collection : ceux des modules communs (`common/tests/`) et ceux de chaque mini-jeu (par exemple `imposteur/tests/` ou `tu_preferes/tests/`).
