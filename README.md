@@ -1,6 +1,6 @@
 # clovis
 
-Une collection de mini-jeux à jouer à plusieurs sur un seul appareil. Chaque mini-jeu vit dans son propre dossier à la racine ; les éléments partagés (design et utilitaires) sont regroupés dans `common/`. Les mini-jeux « À couvert » et « Tu préfères » utilisent React et Vite ; le hub reste une page statique.
+Une collection de mini-jeux à jouer à plusieurs sur un seul appareil. Chaque mini-jeu vit dans son propre dossier à la racine ; les éléments partagés (design et utilitaires) sont regroupés dans `common/`. Les mini-jeux utilisent React et Vite ; le hub reste une page statique.
 
 ## Lancer
 
@@ -36,6 +36,7 @@ La compilation génère le hub et le jeu dans `dist/`, prêts à être hébergé
 ## Mini-jeux
 
 - [`imposteur/`](./imposteur/README.md) — **À couvert, le jeu de l'imposteur** : un jeu de bluff en français, de 3 à 12 joueurs, quelques minutes par manche.
+- [`loup-garou/`](./loup-garou/README.md) — **Le Loup-Garou** : rôles secrets, actions nocturnes, pouvoirs et votes, de 4 à 12 joueurs.
 - [`tu_preferes/`](./tu_preferes/README.md) — **Tu préfères** : des dilemmes soft ou hot (18+) à débattre, sans score ni fin de partie.
 
 ## Tester et vérifier
@@ -60,13 +61,14 @@ npm run seed:check:tu-preferes
 │   ├── styles/           styles partagés (base, formulaires, hub)
 │   └── tests/            tests des modules communs
 ├── imposteur/            mini-jeu React « À couvert » (voir son README)
+├── loup-garou/           mini-jeu React « Le Loup-Garou » (voir son README)
 │   ├── index.html
 │   ├── styles.css
-│   ├── data/seed.json
-│   ├── scripts/
 │   ├── src/
-│   │   └── main.jsx      interface et composants React
-│   └── tests/
+│   │   ├── config.js
+│   │   ├── game.js
+│   │   └── main.jsx
+│   └── tests/            tests des règles de partie
 └── tu_preferes/          mini-jeu React « Tu préfères » (voir son README)
     ├── index.html
     ├── styles.css

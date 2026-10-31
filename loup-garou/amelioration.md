@@ -1,0 +1,1 @@
+Meilleur affichage des cartes (plus beau, image, comme celle du jeu)

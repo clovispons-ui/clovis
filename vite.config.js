@@ -15,6 +15,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         home: resolve(rootDirectory, "index.html"),
+        loupGarou: resolve(rootDirectory, "loup-garou/index.html"),
         imposteur: resolve(rootDirectory, "imposteur/index.html"),
         tuPreferes: resolve(rootDirectory, "tu_preferes/index.html"),
       },
